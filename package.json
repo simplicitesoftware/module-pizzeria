@@ -1,0 +1,12 @@
+{
+    "date": "Wed Nov 15 17:42:38 CET 2017",
+    "name": "Pizzeria",
+    "format": "xml",
+    "description": "This is a sample Pizzeria application (backend and frontend)\n\nFrontend page available on `<root>/ext/pizzeria`\n",
+    "repository": {
+        "type": "url",
+        "url": "https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml"
+    },
+    "version": "4.0",
+    "dependencies": [{"Simplicite": "4.0"}]
+}
