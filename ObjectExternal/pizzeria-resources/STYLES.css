@@ -53,7 +53,9 @@ a .link-hover {
      margin: 0.43em 0;
 }
 
-
+p, ul {
+	color: #b1784c;
+}
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {

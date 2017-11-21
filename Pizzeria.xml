@@ -23,26 +23,26 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_logo_invert>0</thm_logo_invert>
 		<thm_logo2_id/>
 		<thm_color1>#f0d8b5</thm_color1>
-		<thm_color2>#0B4182</thm_color2>
+		<thm_color2>#D98039</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
-		<thm_color3>#0B4182</thm_color3>
+		<thm_color3>#D98039</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>Theme/thm_css_doc/0/5/PizzeriaTheme_gen.css</thm_css_doc>
-		<thm_addon>Theme/thm_addon/0/5/PizzeriaTheme.css</thm_addon>
+		<thm_addon/>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
-		<thm_menu_dom_c>#3498DB</thm_menu_dom_c>
-		<thm_menu_dom_t/>
-		<thm_menu_dact_c>#3498DB</thm_menu_dact_c>
-		<thm_menu_dact_t/>
-		<thm_menu_sub_c>#2980B9</thm_menu_sub_c>
-		<thm_menu_sub_t/>
-		<thm_menu_sact_c>#3498db</thm_menu_sact_c>
-		<thm_menu_sact_t/>
+		<thm_menu_dom_c>#d98039</thm_menu_dom_c>
+		<thm_menu_dom_t>#FFFFFF</thm_menu_dom_t>
+		<thm_menu_dact_c>#B1784C</thm_menu_dact_c>
+		<thm_menu_dact_t>#FFFFFF</thm_menu_dact_t>
+		<thm_menu_sub_c>#D98039</thm_menu_sub_c>
+		<thm_menu_sub_t>#FFFFFF</thm_menu_sub_t>
+		<thm_menu_sact_c>#EC9A58</thm_menu_sact_c>
+		<thm_menu_sact_t>#FFFFFF</thm_menu_sact_t>
 		<thm_menu_sta_c/>
-		<thm_menu_sta_t/>
+		<thm_menu_sta_t>#FFFFFF</thm_menu_sta_t>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
