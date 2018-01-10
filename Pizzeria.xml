@@ -546,12 +546,12 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_updatable>1</fld_updatable>
 		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research>2</fld_research>
+		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
-		<fld_type>7</fld_type>
+		<fld_type>14</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist>APP_PIZ_TYPE</fld_enumlist>
 		<fld_list_id.lov_name>APP_PIZ_TYPE</fld_list_id.lov_name>
@@ -565,7 +565,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>PB</fld_rendering>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza type]]></fld_comment>
@@ -1212,7 +1212,7 @@ Frontend page available on `<root>/ext/pizzeria`
 	<data>
 		<obf_object_id.obo_name>PzaPizza</obf_object_id.obo_name>
 		<obf_field_id.fld_name>pzaPizType</obf_field_id.fld_name>
-		<obf_field_id.fld_type>7</obf_field_id.fld_type>
+		<obf_field_id.fld_type>14</obf_field_id.fld_type>
 		<obf_order>200</obf_order>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -1232,7 +1232,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
-		<obf_field_id.fld_research>2</obf_field_id.fld_research>
+		<obf_field_id.fld_research/>
 		<obf_fld_more/>
 		<obf_field_id.fld_more>0</obf_field_id.fld_more>
 		<obf_fld_listmore/>
