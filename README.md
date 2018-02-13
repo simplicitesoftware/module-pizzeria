@@ -43,7 +43,7 @@ Pizza business object
 | ------------------------------------------------------------ | ---------------------------------------- | --- | --- | -------------------------------------------------------------------------------- |
 | `pzaPizName`                                                 | regexp(100)                              | x*  | x   | Pizza name                                                                       |
 | `pzaPizPrice`                                                | float(10, 2)                             | x   | x   | Pizza price                                                                      |
-| `pzaPizType`                                                 | multi(10) using `APP_PIZ_TYPE` list      | x   | x   | Pizza type                                                                       |
+| `pzaPizType`                                                 | enum(7) using `APP_PIZ_TYPE` list        | x   | x   | Pizza type                                                                       |
 | `pzaPizDiameter`                                             | int(3)                                   |     | x   | Pizza diameter                                                                   |
 | `pzaPizPicture`                                              | image                                    |     | x   | Pizza picture                                                                    |
 | `pzaPizDesc`                                                 | html(10000)                              |     | x   | Pizza description                                                                |

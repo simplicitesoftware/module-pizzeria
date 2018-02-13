@@ -1,4 +1,3 @@
----
 components:
   securitySchemes:
     basicAuth:
@@ -8,39 +7,42 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
-security:
-- basicAuth: []
-- bearerAuth: []
 servers:
 - url: https://dev40.simplicite.cloud/api
 openapi: 3.0.0
 paths:
   /login:
-    post:
+    get:
+      security:
+      - basicAuth: []
       description: Login
       operationId: login
       responses:
         '200':
-          description: User information
+          description: User token
+          content:
+            application/json: {}
+            text/plain: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
       - schema:
           type: string
+          enum:
+          - json
+          - oauth2
         in: query
-        name: login
-        description: Login
-        required: true
-      - schema:
-          type: string
-        in: query
-        name: password
-        description: Password
-        required: true
+        name: _output
+        description: Optional output format
+        required: false
       tags:
       - Application
   /logout:
     get:
+      security:
+      - bearerAuth: []
       description: Logout
       operationId: logout
       responses:
@@ -48,15 +50,25 @@ paths:
           description: Logout confirmation
           content:
             application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       tags:
       - Application
   /rest/PzaOrder:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-pzaorder-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -130,6 +142,8 @@ paths:
       - PzaOrder
   /rest:
     get:
+      security:
+      - bearerAuth: []
       description: Application session information
       operationId: info
       responses:
@@ -137,6 +151,11 @@ paths:
           description: Application information
           content:
             application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+            text/plain: {}
       parameters:
       - schema:
           type: boolean
@@ -148,11 +167,17 @@ paths:
       - Application
   /rest/PzaOrder/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-pzaorder-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -219,6 +244,8 @@ paths:
       tags:
       - PzaOrder
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-pzaorder-get
       responses:
@@ -252,11 +279,17 @@ paths:
       tags:
       - PzaOrder
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-pzaorder-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -269,11 +302,17 @@ paths:
       tags:
       - PzaOrder
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-pzaorder-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -341,11 +380,17 @@ paths:
       - PzaOrder
   /rest/PzaPizza/{row_id}:
     post:
+      security:
+      - bearerAuth: []
       description: Create business object record
       operationId: obj-pzapizza-create
       responses:
         '200':
           description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -368,7 +413,7 @@ paths:
         description: Price
         required: false
       - schema:
-          type: array
+          type: string
           enum:
           - THIN
           - PAN
@@ -397,6 +442,8 @@ paths:
       tags:
       - PzaPizza
     get:
+      security:
+      - bearerAuth: []
       description: Get business object record
       operationId: obj-pzapizza-get
       responses:
@@ -430,11 +477,17 @@ paths:
       tags:
       - PzaPizza
     delete:
+      security:
+      - bearerAuth: []
       description: Delete business object record
       operationId: obj-pzapizza-delete
       responses:
         '200':
           description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -447,11 +500,17 @@ paths:
       tags:
       - PzaPizza
     put:
+      security:
+      - bearerAuth: []
       description: Update business object record
       operationId: obj-pzapizza-update
       responses:
         '200':
           description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -474,7 +533,7 @@ paths:
         description: Price
         required: false
       - schema:
-          type: array
+          type: string
           enum:
           - THIN
           - PAN
@@ -504,11 +563,17 @@ paths:
       - PzaPizza
   /rest/PzaPizza:
     get:
+      security:
+      - bearerAuth: []
       description: Get business object metadata or search records
       operationId: obj-pzapizza-search
       responses:
         '200':
           description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
           content:
             application/json: {}
       parameters:
@@ -537,7 +602,7 @@ paths:
         description: Search filter for Price
         required: false
       - schema:
-          type: array
+          type: string
           enum:
           - THIN
           - PAN
