@@ -33,6 +33,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
+		<thm_iconset/>
 		<thm_menu_dom_c>#d98039</thm_menu_dom_c>
 		<thm_menu_dom_t>#FFFFFF</thm_menu_dom_t>
 		<thm_menu_dact_c>#B1784C</thm_menu_dact_c>
@@ -106,7 +107,7 @@ Frontend page available on `<root>/ext/pizzeria`
 	<data>
 		<rsp_login_id.usr_login>designer</rsp_login_id.usr_login>
 		<rsp_group_id.grp_name>PZA_ADMIN</rsp_group_id.grp_name>
-		<rsp_start_dt>2017-09-22</rsp_start_dt>
+		<rsp_start_dt>2017-01-01</rsp_start_dt>
 		<rsp_end_dt/>
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -188,6 +189,38 @@ Frontend page available on `<root>/ext/pizzeria`
 	<name>Field</name>
 	<action>upsert</action>
 	<data>
+		<fld_name>pzaOrdAddress</fld_name>
+		<fld_dbname>ord_address</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>0</fld_copy>
+		<fld_size>100</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Address]]></fld_comment>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>pzaOrdComments</fld_name>
 		<fld_dbname>ord_comments</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -217,6 +250,38 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order comments]]></fld_comment>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fld_name>pzaOrdCoordinates</fld_name>
+		<fld_dbname>ord_coordinates</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>0</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>25</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>0</fld_copy>
+		<fld_size>30</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment><![CDATA[Coordinates]]></fld_comment>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -352,7 +417,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dbname>ord_piz_id</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
-		<fld_required>0</fld_required>
+		<fld_required>1</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -959,9 +1024,81 @@ Frontend page available on `<root>/ext/pizzeria`
 	</data>
 	<data>
 		<obf_object_id.obo_name>PzaOrder</obf_object_id.obo_name>
+		<obf_field_id.fld_name>pzaOrdAddress</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>140</obf_order>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
+		<obf_field_id.fld_required>1</obf_field_id.fld_required>
+		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_field_id.fld_visible>3</obf_field_id.fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_field_id.fld_research>1</obf_field_id.fld_research>
+		<obf_fld_more/>
+		<obf_field_id.fld_more>0</obf_field_id.fld_more>
+		<obf_fld_listmore/>
+		<obf_field_id.fld_listmore>0</obf_field_id.fld_listmore>
+		<obf_fld_researchreq/>
+		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>PzaOrder-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>PzaOrder</obf_object_id.obo_name>
+		<obf_field_id.fld_name>pzaOrdCoordinates</obf_field_id.fld_name>
+		<obf_field_id.fld_type>25</obf_field_id.fld_type>
+		<obf_order>150</obf_order>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
+		<obf_field_id.fld_required>0</obf_field_id.fld_required>
+		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_field_id.fld_visible>3</obf_field_id.fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_field_id.fld_research>0</obf_field_id.fld_research>
+		<obf_fld_more/>
+		<obf_field_id.fld_more>0</obf_field_id.fld_more>
+		<obf_fld_listmore/>
+		<obf_field_id.fld_listmore>0</obf_field_id.fld_listmore>
+		<obf_fld_researchreq/>
+		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>PzaOrder-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>PzaOrder</obf_object_id.obo_name>
 		<obf_field_id.fld_name>pzaOrdComments</obf_field_id.fld_name>
 		<obf_field_id.fld_type>13</obf_field_id.fld_type>
-		<obf_order>140</obf_order>
+		<obf_order>190</obf_order>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1002,7 +1139,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
-		<obf_field_id.fld_required>0</obf_field_id.fld_required>
+		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_ref_object_id.obo_name>PzaPizza</obf_ref_object_id.obo_name>
 		<obf_cascad>R</obf_cascad>
@@ -1364,7 +1501,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_object_id.obj_name>PzaOrder</obf_object_id.obj_name>
 		<obf_field_id.fld_name>pzaOrdPizId</obf_field_id.fld_name>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
-		<obf_field_id.fld_required>0</obf_field_id.fld_required>
+		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
@@ -1612,6 +1749,20 @@ Frontend page available on `<root>/ext/pizzeria`
 	</data>
 </object>
 <object>
+	<name>PlaceMap</name>
+	<action>upsert</action>
+	<data>
+		<pcm_name>PzaOrders</pcm_name>
+		<pcm_object_id.obo_name>PzaOrder</pcm_object_id.obo_name>
+		<pcm_address_id.fld_name>pzaOrdAddress</pcm_address_id.fld_name>
+		<pcm_coords_id.fld_name>pzaOrdCoordinates</pcm_coords_id.fld_name>
+		<pcm_label1_id.fld_name>pzaOrdDate</pcm_label1_id.fld_name>
+		<pcm_label2_id.fld_name>pzaOrdName</pcm_label2_id.fld_name>
+		<pcm_label3_id.fld_name>pzaOrdPhone</pcm_label3_id.fld_name>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>Resource</name>
 	<action>upsert</action>
 	<data>
@@ -1758,6 +1909,24 @@ Frontend page available on `<root>/ext/pizzeria`
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>PzaOrder</obo_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>JS</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>SCRIPT</res_code>
+		<res_cached>0</res_cached>
+		<res_file>ObjectInternal/PzaOrder-resources/SCRIPT.js</res_file>
+		<res_file_compiled/>
+		<res_image/>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>Model</name>
@@ -1776,9 +1945,29 @@ Frontend page available on `<root>/ext/pizzeria`
 	<action>upsert</action>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>pzaOrdAddress</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Address</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>pzaOrdComments</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Comments</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>pzaOrdCoordinates</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Coordinates</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -1896,9 +2085,29 @@ Frontend page available on `<root>/ext/pizzeria`
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>pzaOrdAddress</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Adresse</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>pzaOrdComments</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Commentaires</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>pzaOrdCoordinates</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Coordonnées</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>

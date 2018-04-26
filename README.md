@@ -22,8 +22,10 @@ Order business object
 | `pzaOrdName`                                                 | char(100)                                | x   | x   | Order name                                                                       |
 | `pzaOrdPhone`                                                | phone(20)                                |     | x   | Ordering person's phone number                                                   |
 | `pzaOrdEmail`                                                | email(100)                               |     | x   | Ordering person's email address                                                  |
+| `pzaOrdAddress`                                              | char(100)                                | x   | x   | Address                                                                          |
+| `pzaOrdCoordinates`                                          | geocoords                                |     | x   | Coordinates                                                                      |
 | `pzaOrdComments`                                             | text(1000000)                            |     | x   | Order comments                                                                   |
-| `pzaOrdPizId` link to **`PzaPizza`**                         | id                                       |     | x   | Order pizza                                                                      |
+| `pzaOrdPizId` link to **`PzaPizza`**                         | id                                       | x   | x   | Order pizza                                                                      |
 | _Ref. `pzaOrdPizId.pzaPizName`_                              | _regexp(100)_                            |     |     | _Pizza name_                                                                     |
 | _Ref. `pzaOrdPizId.pzaPizPicture`_                           | _image_                                  |     |     | _Pizza picture_                                                                  |
 | _Ref. `pzaOrdPizId.pzaPizPrice`_                             | _float(10, 2)_                           |     |     | _Pizza price_                                                                    |

@@ -8,7 +8,7 @@ components:
       scheme: bearer
       type: http
 servers:
-- url: https://dev40.simplicite.cloud/api
+- url: https://dev40.dev.simplicite.io/api
 openapi: 3.0.0
 paths:
   /login:
@@ -107,6 +107,18 @@ paths:
         in: query
         name: pzaOrdEmail
         description: Search filter for E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdAddress
+        description: Search filter for Address
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdCoordinates
+        description: Search filter for Coordinates
         required: false
       - schema:
           type: string
@@ -210,6 +222,18 @@ paths:
         in: query
         name: pzaOrdEmail
         description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdAddress
+        description: Address
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdCoordinates
+        description: Coordinates
         required: false
       - schema:
           type: string
@@ -345,6 +369,18 @@ paths:
         in: query
         name: pzaOrdEmail
         description: E-mail
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdAddress
+        description: Address
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdCoordinates
+        description: Coordinates
         required: false
       - schema:
           type: string
