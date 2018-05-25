@@ -22,6 +22,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_logo_id>Theme/thm_logo_id/0/5/pizzeria-logo.png</thm_logo_id>
 		<thm_logo_invert>0</thm_logo_invert>
 		<thm_logo2_id/>
+		<thm_favicon_id>Theme/thm_favicon_id/0/5/pizzeria-favicon.png</thm_favicon_id>
 		<thm_color1>#f0d8b5</thm_color1>
 		<thm_color2>#D98039</thm_color2>
 		<thm_text2>#FFFFFF</thm_text2>
@@ -60,6 +61,18 @@ Frontend page available on `<root>/ext/pizzeria`
 		<viw_scope/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 		<viw_theme_id.thm_name>PizzeriaTheme</viw_theme_id.thm_name>
+	</data>
+</object>
+<object>
+	<name>Model</name>
+	<action>upsert</action>
+	<data>
+		<mod_name>Pizzeria</mod_name>
+		<mod_template_id.mtp_name>ModelBusinessObject</mod_template_id.mtp_name>
+		<mod_doc>Model/Pizzeria.json</mod_doc>
+		<mod_json/>
+		<mod_image>Model/Pizzeria.png</mod_image>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -211,6 +224,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -243,6 +257,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -275,6 +290,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -307,6 +323,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault><![CDATA[[DATETIME]]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -339,6 +356,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -371,6 +389,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -403,6 +422,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -435,6 +455,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -467,6 +488,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -499,6 +521,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -531,6 +554,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>1</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -563,6 +587,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -595,6 +620,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault><![CDATA[0]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -627,6 +653,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_dfault><![CDATA[THIN]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -780,6 +807,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_exportorder>0</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
+		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>AppOrder</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -834,6 +862,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_exportorder>1</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
+		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>PzaOrder;pzaOrdPizId</obo_dfltref>
 		<obo_template_id.tpl_name>AppPizza</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
@@ -883,6 +912,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdDate</obf_field_id.fld_name>
 		<obf_field_id.fld_type>5</obf_field_id.fld_type>
 		<obf_order>100</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order>-1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -919,6 +949,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdName</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>110</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -955,6 +986,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdPhone</obf_field_id.fld_name>
 		<obf_field_id.fld_type>22</obf_field_id.fld_type>
 		<obf_order>120</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -991,6 +1023,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdEmail</obf_field_id.fld_name>
 		<obf_field_id.fld_type>12</obf_field_id.fld_type>
 		<obf_order>130</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1027,6 +1060,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdAddress</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>140</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1063,6 +1097,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdCoordinates</obf_field_id.fld_name>
 		<obf_field_id.fld_type>25</obf_field_id.fld_type>
 		<obf_order>150</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1099,6 +1134,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdComments</obf_field_id.fld_name>
 		<obf_field_id.fld_type>13</obf_field_id.fld_type>
 		<obf_order>190</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1135,6 +1171,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaOrdPizId</obf_field_id.fld_name>
 		<obf_field_id.fld_type>0</obf_field_id.fld_type>
 		<obf_order>200</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1171,6 +1208,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizName</obf_field_id.fld_name>
 		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>210</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name>pzaOrdPizId</obf_ref_field_id.fld_name>
@@ -1207,6 +1245,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizPicture</obf_field_id.fld_name>
 		<obf_field_id.fld_type>20</obf_field_id.fld_type>
 		<obf_order>220</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name>pzaOrdPizId</obf_ref_field_id.fld_name>
@@ -1243,6 +1282,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizPrice</obf_field_id.fld_name>
 		<obf_field_id.fld_type>2</obf_field_id.fld_type>
 		<obf_order>230</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name>pzaOrdPizId</obf_ref_field_id.fld_name>
@@ -1279,6 +1319,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizName</obf_field_id.fld_name>
 		<obf_field_id.fld_type>15</obf_field_id.fld_type>
 		<obf_order>100</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1315,6 +1356,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizPrice</obf_field_id.fld_name>
 		<obf_field_id.fld_type>2</obf_field_id.fld_type>
 		<obf_order>110</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1351,6 +1393,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizType</obf_field_id.fld_name>
 		<obf_field_id.fld_type>7</obf_field_id.fld_type>
 		<obf_order>200</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1387,6 +1430,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizDiameter</obf_field_id.fld_name>
 		<obf_field_id.fld_type>1</obf_field_id.fld_type>
 		<obf_order>210</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1423,6 +1467,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizPicture</obf_field_id.fld_name>
 		<obf_field_id.fld_type>20</obf_field_id.fld_type>
 		<obf_order>220</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1459,6 +1504,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_name>pzaPizDesc</obf_field_id.fld_name>
 		<obf_field_id.fld_type>11</obf_field_id.fld_type>
 		<obf_order>300</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -1728,6 +1774,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<map_object_id.obj_name>PzaPizza</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>71600</map_order>
+		<map_ext/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1735,6 +1782,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<map_object_id.obj_name>PzaOrder</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
 		<map_order>71610</map_order>
+		<map_ext/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
@@ -1925,18 +1973,6 @@ Frontend page available on `<root>/ext/pizzeria`
 		<res_file>ObjectInternal/PzaOrder-resources/SCRIPT.js</res_file>
 		<res_file_compiled/>
 		<res_image/>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-	</data>
-</object>
-<object>
-	<name>Model</name>
-	<action>upsert</action>
-	<data>
-		<mod_name>Pizzeria</mod_name>
-		<mod_template_id.mtp_name>ModelBusinessObject</mod_template_id.mtp_name>
-		<mod_doc>Model/Pizzeria.json</mod_doc>
-		<mod_json/>
-		<mod_image>Model/Pizzeria.png</mod_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
