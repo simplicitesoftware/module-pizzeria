@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base http://www.simplicite.fr/schemas/base.xsd">
+<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -30,14 +30,14 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>Theme/thm_css_doc/0/5/PizzeriaTheme_gen.css</thm_css_doc>
-		<thm_addon/>
+		<thm_addon>Theme/thm_addon/0/5/PizzeriaTheme.css</thm_addon>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
 		<thm_iconset/>
 		<thm_menu_dom_c>#d98039</thm_menu_dom_c>
 		<thm_menu_dom_t>#FFFFFF</thm_menu_dom_t>
-		<thm_menu_dact_c>#B1784C</thm_menu_dact_c>
+		<thm_menu_dact_c>#c8722e</thm_menu_dact_c>
 		<thm_menu_dact_t>#FFFFFF</thm_menu_dact_t>
 		<thm_menu_sub_c>#D98039</thm_menu_sub_c>
 		<thm_menu_sub_t>#FFFFFF</thm_menu_sub_t>
@@ -1558,9 +1558,9 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_associate/>
 		<obf_field_id.fld_dbname>ord_piz_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 		<obf_area_id.ofa_name>PzaOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
