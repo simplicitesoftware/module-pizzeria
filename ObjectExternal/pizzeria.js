@@ -1,7 +1,5 @@
 pizzeria.display = function(params) {
 	this.setDecoration(false);
-	this.setPublic(true);
-
 	var wp = new JQueryWebPage(params.getRoot(), this.getDisplay());
 	wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
 	wp.appendAjax();
