@@ -6,7 +6,7 @@ pizzeria.display = function(params) {
 	wp.appendMustache();
 	wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
 	wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
-	wp.append(HTMLTool.getResourceHTMLContent(this, "TEMPLATE"));
+	wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
 	wp.setReady("pizzeria.render('" + wp.getRoot() + "', '" + HTMLTool.getResourceImageURL(this, "BANNER") + "')");
 	return wp.toString();
 };
