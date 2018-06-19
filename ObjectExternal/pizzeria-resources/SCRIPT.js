@@ -7,7 +7,7 @@ if (typeof pizzeria === "undefined") pizzeria = (function($) {
 		piz.toFixed = function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); } }; // Mustache rendering for decimal
 		piz.bannerURL = banner;
 		piz.search(function() {
-			$("#pizzeria").html(Mustache.render($("#pizzeria-template").html(), piz)).show();
+			$("#pizzeria").html(Mustache.render($("#pizzeria-template").html(), piz));
 		}, {}, { inlineDocs: true });
 	}
 
