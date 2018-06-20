@@ -7,7 +7,7 @@
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-02-13 18:15:20</mdl_lastupd>
+		<mdl_lastupd>2018-06-20 21:18:59</mdl_lastupd>
 		<mdl_comment><![CDATA[This is a sample Pizzeria application (backend and frontend)
 
 Frontend page available on `<root>/ext/pizzeria`
@@ -21,7 +21,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_name>pizzeria</thm_name>
 		<thm_logo_id>Theme/pizzeria/logo.png</thm_logo_id>
 		<thm_logo_invert>0</thm_logo_invert>
-		<thm_logo2_id/>
+		<thm_logo2_id>Theme/pizzeria/logo2.png</thm_logo2_id>
 		<thm_favicon_id>Theme/pizzeria/favicon.png</thm_favicon_id>
 		<thm_color1>#f0d8b5</thm_color1>
 		<thm_color2>#D98039</thm_color2>
@@ -29,8 +29,8 @@ Frontend page available on `<root>/ext/pizzeria`
 		<thm_color3>#D98039</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>Theme/pizzeria/pizzeria_gen.css.css</thm_css_doc>
-		<thm_addon>Theme/pizzeria/addon.css</thm_addon>
+		<thm_css_doc>Theme/pizzeria/pizzeria_gen.css</thm_css_doc>
+		<thm_addon>Theme/pizzeria/addon.less</thm_addon>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
@@ -56,7 +56,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<viw_template><![CDATA[<iframe frameborder="no" style="width:100%;height:100%;" src="../ext/pizzeria"></iframe>]]></viw_template>
 		<viw_ui><![CDATA[<iframe frameborder="no" style="position:absolute;width:100%;height:100%;" src="../ext/pizzeria"></iframe>]]></viw_ui>
 		<viw_order>500</viw_order>
-		<viw_icon>pza-pizzeria</viw_icon>
+		<viw_icon/>
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -1880,8 +1880,8 @@ Frontend page available on `<root>/ext/pizzeria`
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/pizzeria-resources/STYLES.css</res_file>
-		<res_file_compiled/>
+		<res_file>ObjectExternal/pizzeria-resources/STYLES.less</res_file>
+		<res_file_compiled>ObjectExternal/pizzeria-resources/STYLES.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
