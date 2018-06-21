@@ -1881,7 +1881,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/pizzeria-resources/STYLES.less</res_file>
-		<res_file_compiled>ObjectExternal/pizzeria-resources/STYLES.css</res_file_compiled>
+		<res_file_compiled>ObjectExternal/pizzeria-resources/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -1953,7 +1953,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/pizzeria-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/pizzeria-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
