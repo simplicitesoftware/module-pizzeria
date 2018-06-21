@@ -668,25 +668,31 @@ Frontend page available on `<root>/ext/pizzeria`
 	<name>Template</name>
 	<action>upsert</action>
 	<data>
-		<tpl_name>AppOrder</tpl_name>
+		<tpl_name>PzaOrder</tpl_name>
 		<tpl_form><![CDATA[<table class="area">
-    <tbody>
-        <tr>
-            <td class="area">[AREA:1]</td>
-            <td class="area">[AREA:2]</td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr>
+			<td class="area">[AREA:1]</td>
+			<td class="area">[AREA:2]</td>
+		</tr>
+	</tbody>
 </table>]]></tpl_form>
-		<tpl_ui><![CDATA[<div class="row">
-	<div class="area col-sm-6" data-area="1"></div>
-	<div class="area col-sm-6" data-area="2"></div>
+		<tpl_ui><![CDATA[<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="area" data-area="1"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="area" data-area="2"></div>
+    </div>
+  </div>
 </div>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
-		<tpl_name>AppPizza</tpl_name>
+		<tpl_name>PzaPizza</tpl_name>
 		<tpl_form><![CDATA[<table class="area">
 	<tbody>
 		<tr>
@@ -699,13 +705,19 @@ Frontend page available on `<root>/ext/pizzeria`
 	</tbody>
 </table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
-	<div class="row">
-		<div class="area" data-area="1"></div>
-	</div>
-	<div class="row">
-		<div class="area" data-area="2"></div>
-		<div class="area" data-area="3"></div>
-	</div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="area" data-area="1"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="area" data-area="2"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="area" data-area="3"></div>
+    </div>
+  </div>
 </div>
 ]]></tpl_ui>
 		<tpl_min/>
@@ -809,7 +821,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
-		<obo_template_id.tpl_name>AppOrder</obo_template_id.tpl_name>
+		<obo_template_id.tpl_name>PzaOrder</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
@@ -864,7 +876,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref>PzaOrder;pzaOrdPizId</obo_dfltref>
-		<obo_template_id.tpl_name>AppPizza</obo_template_id.tpl_name>
+		<obo_template_id.tpl_name>PzaPizza</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
