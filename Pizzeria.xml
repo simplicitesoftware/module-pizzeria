@@ -53,8 +53,8 @@ Frontend page available on `<root>/ext/pizzeria`
 	<action>upsert</action>
 	<data>
 		<viw_name>PzaHome</viw_name>
-		<viw_template><![CDATA[<iframe frameborder="no" style="width:100%;height:100%;" src="../ext/pizzeria"></iframe>]]></viw_template>
-		<viw_ui><![CDATA[<iframe frameborder="no" style="position:absolute;width:100%;height:100%;" src="../ext/pizzeria"></iframe>]]></viw_ui>
+		<viw_template><![CDATA[<iframe frameborder="no" style="width:100%;height:100%;" src="ext/pizzeria"></iframe>]]></viw_template>
+		<viw_ui><![CDATA[<iframe frameborder="no" style="position:absolute;width:100%;height:100%;" src="ext/pizzeria"></iframe>]]></viw_ui>
 		<viw_order>500</viw_order>
 		<viw_icon/>
 		<viw_disp_id.dis_code/>
