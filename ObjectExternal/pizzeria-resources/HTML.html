@@ -5,7 +5,7 @@
 		<div class="row">
 			<div class="col-md-12 text-center head-title">
 				<h1><span style="font-size: 1.5em">Pizzeria</span></h1>
-				<div class="baseline"><h2>This is a sample web page using Mustache&reg; templating</h2></div>
+				<div class="baseline"><h2>We make the best pizzas in town!</h2></div>
 			</div>
 		</div>
 	</div>
@@ -17,7 +17,7 @@
 			<div class="col-md-4">
 				<h1 class="text-primary text-center title">{{pzaPizName}}</h1>
 				<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}"/>{{/pzaPizPicture}}</h3>
-				<p class="text-right"><a href="javascript:" class="btn btn-primary btn-md">$ {{#toFixed}}{{pzaPizPrice}}{{/toFixed}}</a></p>
+				<p class="text-right"><button type="button" data-id="{{row_id}}" class="btn btn-primary btn-md">$ {{#toFixed}}{{pzaPizPrice}}{{/toFixed}}</button></p>
 				<p class="text-left text-muted">{{{pzaPizDesc}}}</p>
 			</div>
 			{{/list}}
@@ -33,5 +33,29 @@
 		</div>
 	</div>
 </div>
+</template>
+<template id="pizzeria-video-template">
+	<div class="video">
+		<iframe width="560" height="315" src="{{pzaPizVideo}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+</template>
+<template id="pizzeria-order-template">
+	<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}"/>{{/pzaPizPicture}}</h3>
+	<div class="form-group">
+		<label for="pizzeria-name">Name</label>
+		<input type="text" class="form-control" id="pizzeria-name" placeholder="Your name">
+	</div>
+	<div class="form-group">
+		<label for="pizzeria-address">Address</label>
+		<input type="text" class="form-control" id="pizzeria-address" placeholder="Your address">
+	</div>
+	<div class="form-group">
+		<label for="pizzeria-phone">Phone number</label>
+		<input type="phone" class="form-control" id="pizzeria-phone" placeholder="Your phone number">
+	</div>
+	<div class="form-group">
+		<label for="pizzeria-email">Email address</label>
+		<input type="email" class="form-control" id="pizzeria-email" placeholder="Your email">
+	</div>
 </template>
 <div id="pizzeria"></div>

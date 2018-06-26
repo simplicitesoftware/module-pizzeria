@@ -276,15 +276,15 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>0</fld_research>
 		<fld_researchreq>0</fld_researchreq>
-		<fld_more>0</fld_more>
-		<fld_listmore>0</fld_listmore>
+		<fld_more>1</fld_more>
+		<fld_listmore>1</fld_listmore>
 		<fld_listsum/>
 		<fld_type>25</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
 		<fld_copy>0</fld_copy>
-		<fld_size>30</fld_size>
+		<fld_size>50</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_dfault/>
@@ -1176,9 +1176,9 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_fld_research/>
 		<obf_field_id.fld_research>0</obf_field_id.fld_research>
 		<obf_fld_more/>
-		<obf_field_id.fld_more>0</obf_field_id.fld_more>
+		<obf_field_id.fld_more>1</obf_field_id.fld_more>
 		<obf_fld_listmore/>
-		<obf_field_id.fld_listmore>0</obf_field_id.fld_listmore>
+		<obf_field_id.fld_listmore>1</obf_field_id.fld_listmore>
 		<obf_fld_researchreq/>
 		<obf_field_id.fld_researchreq>0</obf_field_id.fld_researchreq>
 		<obf_fld_dfault/>
