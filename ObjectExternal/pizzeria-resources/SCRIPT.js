@@ -30,12 +30,16 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 							ord.item.pzaOrdPhone = $('#pizzeria-phone').val();
 							ord.item.pzaOrdEmail = $('#pizzeria-email').val();
 							ord.create(function() {
-								bootbox.alert({ message: 'Order placed! Thank you.' });
-							});
+								bootbox.alert({ title: 'Confirmation', message: 'Thank you!' });
+							}, null, { error: function(err) {
+								bootbox.alert({ title: 'Error', message: $("<pre/>").append(app.getErrorMessage(err)) });
+							}});
 						}
 					},
 					buttons: {
-						confirm: { label: 'Order', className: 'btn-success' },
+						confirm: { label: 'Order', className: 'btn-success', callback: function() {
+							alert('ici');	
+						}},
 						cancel: { label: 'Cancel', className: 'btn-danger' }
 					}
 				});
