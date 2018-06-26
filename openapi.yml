@@ -475,6 +475,12 @@ paths:
         name: pzaPizDesc
         description: Description
         required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaPizVideo
+        description: Video
+        required: false
       tags:
       - PzaPizza
     get:
@@ -595,6 +601,12 @@ paths:
         name: pzaPizDesc
         description: Description
         required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaPizVideo
+        description: Video
+        required: false
       tags:
       - PzaPizza
   /rest/PzaPizza:
@@ -663,6 +675,12 @@ paths:
         in: query
         name: pzaPizDesc
         description: Search filter for Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaPizVideo
+        description: Search filter for Video
         required: false
       tags:
       - PzaPizza

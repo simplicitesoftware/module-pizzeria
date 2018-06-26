@@ -49,6 +49,7 @@ Pizza business object
 | `pzaPizDiameter`                                             | int(3)                                   |     | x   | Pizza diameter                                                                   |
 | `pzaPizPicture`                                              | image                                    |     | x   | Pizza picture                                                                    |
 | `pzaPizDesc`                                                 | html(10000)                              |     | x   | Pizza description                                                                |
+| `pzaPizVideo`                                                | url(1024)                                |     | x   | -                                                                                |
 
 ### Lists
 
