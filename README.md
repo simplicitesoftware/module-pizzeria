@@ -25,10 +25,47 @@ Order business object
 | `pzaOrdAddress`                                              | char(100)                                | x   | x   | Address                                                                          |
 | `pzaOrdCoordinates`                                          | geocoords                                |     | x   | Coordinates                                                                      |
 | `pzaOrdComments`                                             | text(1000000)                            |     | x   | Order comments                                                                   |
+| `pzaOrdStatus`                                               | enum(7) using `PZA_ORD_STATUS` list      | x   | x   | Status                                                                           |
 | `pzaOrdPizId` link to **`PzaPizza`**                         | id                                       | x   | x   | Order pizza                                                                      |
 | _Ref. `pzaOrdPizId.pzaPizName`_                              | _regexp(100)_                            |     |     | _Pizza name_                                                                     |
 | _Ref. `pzaOrdPizId.pzaPizPicture`_                           | _image_                                  |     |     | _Pizza picture_                                                                  |
 | _Ref. `pzaOrdPizId.pzaPizPrice`_                             | _float(10, 2)_                           |     |     | _Pizza price_                                                                    |
+
+### Lists
+
+* `PZA_ORD_STATUS`
+    - `PND` Pending
+    - `VAL` Validated
+    - `DEL` Delivered
+    - `CNC` Cancelled
+
+### Custom actions
+
+No custom action
+
+`PzaOrderHistoric` business object definition
+---------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Req | Upd | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | --- | --- | -------------------------------------------------------------------------------- |
+| `row_ref_id` link to **`PzaOrder`**                          | id                                       | x*  |     | -                                                                                |
+| `row_idx`                                                    | int(11)                                  | x*  | x   | -                                                                                |
+| `created_by_hist`                                            | char(100)                                | x*  |     | -                                                                                |
+| `created_dt_hist`                                            | datetime                                 | x*  |     | -                                                                                |
+| `pzaOrdDate`                                                 | datetime                                 | x*  |     | Order date                                                                       |
+| `pzaOrdStatus`                                               | enum(7) using `PZA_ORD_STATUS` list      | x   | x   | Status                                                                           |
+
+### Lists
+
+* `PZA_ORD_STATUS`
+    - `PND` Pending
+    - `VAL` Validated
+    - `DEL` Delivered
+    - `CNC` Cancelled
 
 ### Custom actions
 

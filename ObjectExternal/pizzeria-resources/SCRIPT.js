@@ -23,6 +23,7 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 					message: Mustache.render($('#pizzeria-order-template').html(), pizza),
 					callback: function(res) {
 						if (res) {
+							alert
 							var ord = app.getBusinessObject('PzaOrder');
 							ord.item.pzaOrdPizId = pizza.row_id;
 							ord.item.pzaOrdName = $('#pizzeria-name').val();
@@ -47,14 +48,13 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 				}).on('shown.bs.modal', function() {
 					var addr = $('#pizzeria-address')[0];
 					var ac = new google.maps.places.Autocomplete(addr);
-					google.maps.event.addListener(ac, 'place_changed', function() {
-					/*ac.addListener("place_changed", function() {*/
+					ac.addListener("place_changed", function() {
 						var l = ac.getPlace().geometry.location;
-						$('#pizzeria-coords').val(l.lat() + "," + l.lng());
+						$('#pizzeria-coordinates').val(l.lat() + "," + l.lng());
 					});
 				});
 			})
-		}, {}, { inlineDocs: true });
+		}, { pzaPizAvailable: true }, { inlineDocs: true });
 	}
 
 	return { render: render }

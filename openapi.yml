@@ -11,6 +11,264 @@ servers:
 - url: https://dev40.dev.simplicite.io/api
 openapi: 3.0.0
 paths:
+  /rest/PzaOrderHistoric:
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object metadata or search records
+      operationId: obj-pzaorderhistoric-search
+      responses:
+        '200':
+          description: Business object metadata or records of search result
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Search filter for Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: Search filter for User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdDate
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Search filter for Status
+        required: false
+      tags:
+      - PzaOrderHistoric
+  /rest/PzaOrderHistoric/{row_id}:
+    post:
+      security:
+      - bearerAuth: []
+      description: Create business object record
+      operationId: obj-pzaorderhistoric-create
+      responses:
+        '200':
+          description: Created business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdDate
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Status
+        required: false
+      tags:
+      - PzaOrderHistoric
+    get:
+      security:
+      - bearerAuth: []
+      description: Get business object record
+      operationId: obj-pzaorderhistoric-get
+      responses:
+        '200':
+          description: Business object record
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - PzaOrderHistoric
+    delete:
+      security:
+      - bearerAuth: []
+      description: Delete business object record
+      operationId: obj-pzaorderhistoric-delete
+      responses:
+        '200':
+          description: Business object deletion confirmation
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      tags:
+      - PzaOrderHistoric
+    put:
+      security:
+      - bearerAuth: []
+      description: Update business object record
+      operationId: obj-pzaorderhistoric-update
+      responses:
+        '200':
+          description: Updated business object record
+          content:
+            application/json: {}
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID
+        required: true
+      - schema:
+          type: string
+        in: query
+        name: row_ref_id
+        description: Reference
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: row_idx
+        description: Version
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_by_hist
+        description: User
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: created_dt_hist
+        description: Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: pzaOrdDate
+        description: Date
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Status
+        required: false
+      tags:
+      - PzaOrderHistoric
   /login:
     get:
       security:
@@ -128,6 +386,17 @@ paths:
         required: false
       - schema:
           type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Search filter for Status
+        required: false
+      - schema:
+          type: string
         in: query
         name: pzaOrdPizId
         description: Search filter for Pizza
@@ -240,6 +509,17 @@ paths:
         in: query
         name: pzaOrdComments
         description: Comments
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Status
         required: false
       - schema:
           type: string
@@ -387,6 +667,17 @@ paths:
         in: query
         name: pzaOrdComments
         description: Comments
+        required: false
+      - schema:
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        in: query
+        name: pzaOrdStatus
+        description: Status
         required: false
       - schema:
           type: string
