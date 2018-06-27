@@ -27,8 +27,10 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 							ord.item.pzaOrdPizId = pizza.row_id;
 							ord.item.pzaOrdName = $('#pizzeria-name').val();
 							ord.item.pzaOrdAddress = $('#pizzeria-address').val();
+							ord.item.pzaOrdCoordinates = $('#pizzeria-coordinates').val();
 							ord.item.pzaOrdPhone = $('#pizzeria-phone').val();
 							ord.item.pzaOrdEmail = $('#pizzeria-email').val();
+							ord.item.pzaOrdComments = $('#pizzeria-comments').val();
 							ord.create(function() {
 								bootbox.alert({ title: 'Confirmation', message: 'Thank you!' });
 							}, null, { error: function(err) {
@@ -42,6 +44,14 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 						}},
 						cancel: { label: 'Cancel', className: 'btn-danger' }
 					}
+				}).on('shown.bs.modal', function() {
+					var addr = $('#pizzeria-address')[0];
+					var ac = new google.maps.places.Autocomplete(addr);
+					google.maps.event.addListener(ac, 'place_changed', function() {
+					/*ac.addListener("place_changed", function() {*/
+						var l = ac.getPlace().geometry.location;
+						$('#pizzeria-coords').val(l.lat() + "," + l.lng());
+					});
 				});
 			})
 		}, {}, { inlineDocs: true });
