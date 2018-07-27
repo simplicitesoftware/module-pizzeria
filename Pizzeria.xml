@@ -7,7 +7,7 @@
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-06-20 21:18:59</mdl_lastupd>
+		<mdl_lastupd>2018-07-27 12:34:08</mdl_lastupd>
 		<mdl_comment><![CDATA[This is a sample Pizzeria application (backend and frontend)
 
 Frontend page available on `<root>/ext/pizzeria`
@@ -1027,16 +1027,16 @@ Frontend page available on `<root>/ext/pizzeria`
 		</tr>
 	</tbody>
 </table>]]></tpl_form>
-		<tpl_ui><![CDATA[<div>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="area" data-area="1"></div>
-    </div>
-    <div class="col-sm-6">
-      <div class="area" data-area="2"></div>
-    </div>
+		<tpl_ui><![CDATA[<div class="row">
+  <div class="col-sm-6">
+    <div class="area" data-area="1"></div>
   </div>
-</div>]]></tpl_ui>
+  <div class="col-sm-6">
+    <div class="area" data-area="2"></div>
+    <div class="area" data-area="PzaOrderHistoric;row_ref_id"></div>
+  </div>
+</div>
+]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -1092,7 +1092,8 @@ Frontend page available on `<root>/ext/pizzeria`
   <div class="field" data-field="pzaOrdCoordinates"></div>
   <div class="field" data-field="pzaOrdComments"></div>
   <div class="field" data-field="pzaOrdStatus"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -1106,7 +1107,8 @@ Frontend page available on `<root>/ext/pizzeria`
   <div class="field" data-field="pzaOrdPizId__pzaPizName"></div>
   <div class="field" data-field="pzaOrdPizId__pzaPizPicture"></div>
   <div class="field" data-field="pzaOrdPizId__pzaPizPrice"></div>
-</div>]]></ofa_ui>
+</div>
+]]></ofa_ui>
 		<ofa_icon/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -1237,6 +1239,8 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
+		<obo_tray>1</obo_tray>
+		<obo_dashboard>1</obo_dashboard>
 	</data>
 	<data>
 		<obo_name>PzaOrderHistoric</obo_name>
@@ -1292,6 +1296,8 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
+		<obo_tray>1</obo_tray>
+		<obo_dashboard>1</obo_dashboard>
 	</data>
 	<data>
 		<obo_name>PzaPizza</obo_name>
@@ -1347,6 +1353,8 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
 		<obo_btn_close>1</obo_btn_close>
+		<obo_tray>1</obo_tray>
+		<obo_dashboard>1</obo_dashboard>
 	</data>
 </object>
 <object>
