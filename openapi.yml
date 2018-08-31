@@ -1,4 +1,123 @@
 components:
+  schemas:
+    ArrayOfPzaOrder:
+      type: array
+      items:
+        $ref: '#/components/schemas/PzaOrder'
+    PzaPizza:
+      type: object
+      properties:
+        pzaPizPicture:
+          description: Picture
+          type: object
+        pzaPizVideo:
+          description: Video
+          type: string
+        pzaPizDiameter:
+          description: Diameter
+          type: integer
+        pzaPizType:
+          description: Type
+          type: string
+          enum:
+          - THIN
+          - PAN
+        pzaPizPrice:
+          description: Price
+          type: number
+        row_id:
+          description: ID
+          type: string
+        pzaPizDesc:
+          description: Description
+          type: string
+        pzaPizName:
+          description: Name
+          type: string
+    PzaOrder:
+      type: object
+      properties:
+        pzaOrdComments:
+          description: Comments
+          type: string
+        pzaOrdAddress:
+          description: Address
+          type: string
+        pzaOrdPizId__pzaPizPrice:
+          description: Pizza Price
+          type: number
+        pzaOrdPizId__pzaPizName:
+          description: Name of the pizza
+          type: string
+        pzaOrdPizId:
+          description: Pizza
+          type: string
+        pzaOrdPizId__pzaPizPicture:
+          description: Picture of the pizza
+          type: object
+        pzaOrdEmail:
+          description: E-mail
+          type: string
+        pzaOrdCoordinates:
+          description: Coordinates
+          type: string
+        pzaOrdStatus:
+          description: Status
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        pzaOrdPhone:
+          description: Phone number
+          type: string
+        row_id:
+          description: ID
+          type: string
+        pzaOrdDate:
+          description: Date
+          type: string
+        pzaOrdName:
+          description: Name
+          type: string
+    PzaOrderHistoric:
+      type: object
+      properties:
+        row_idx:
+          description: Version
+          type: integer
+        pzaOrdStatus:
+          description: Status
+          type: string
+          enum:
+          - PND
+          - VAL
+          - DEL
+          - CNC
+        created_dt_hist:
+          description: Date
+          type: string
+        row_id:
+          description: ID
+          type: string
+        created_by_hist:
+          description: User
+          type: string
+        pzaOrdDate:
+          description: Date
+          type: string
+        row_ref_id:
+          description: Reference
+          type: string
+    ArrayOfPzaOrderHistoric:
+      type: array
+      items:
+        $ref: '#/components/schemas/PzaOrderHistoric'
+    ArrayOfPzaPizza:
+      type: array
+      items:
+        $ref: '#/components/schemas/PzaPizza'
   securitySchemes:
     basicAuth:
       scheme: basic
@@ -21,7 +140,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfPzaOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -92,7 +213,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -155,6 +278,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrderHistoric'
       parameters:
       - schema:
           type: string
@@ -190,8 +317,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -214,7 +339,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrderHistoric'
         '401':
           description: Authentication error
           content:
@@ -324,7 +451,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfPzaOrder'
         '401':
           description: Authentication error
           content:
@@ -456,7 +585,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrder'
         '401':
           description: Authentication error
           content:
@@ -555,6 +686,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrder'
       parameters:
       - schema:
           type: string
@@ -590,8 +725,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -614,7 +747,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaOrder'
         '401':
           description: Authentication error
           content:
@@ -715,7 +850,9 @@ paths:
         '200':
           description: Created business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaPizza'
         '401':
           description: Authentication error
           content:
@@ -782,6 +919,10 @@ paths:
       responses:
         '200':
           description: Business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaPizza'
       parameters:
       - schema:
           type: string
@@ -817,8 +958,6 @@ paths:
       responses:
         '200':
           description: Business object deletion confirmation
-          content:
-            application/json: {}
         '401':
           description: Authentication error
           content:
@@ -841,7 +980,9 @@ paths:
         '200':
           description: Updated business object record
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PzaPizza'
         '401':
           description: Authentication error
           content:
@@ -910,7 +1051,9 @@ paths:
         '200':
           description: Business object metadata or records of search result
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfPzaPizza'
         '401':
           description: Authentication error
           content:

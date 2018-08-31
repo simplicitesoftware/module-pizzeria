@@ -213,22 +213,6 @@ Frontend page available on `<root>/ext/pizzeria`
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
-	<data>
-		<rsp_login_id.usr_login>pizzeria</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>PZA_PUBLIC</rsp_group_id.grp_name>
-		<rsp_start_dt>2018-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-	</data>
-	<data>
-		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
-		<rsp_group_id.grp_name>PZA_PUBLIC</rsp_group_id.grp_name>
-		<rsp_start_dt>2017-01-01</rsp_start_dt>
-		<rsp_end_dt/>
-		<rsp_activ>1</rsp_activ>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-	</data>
 </object>
 <object>
 	<name>ShortCut</name>
@@ -472,6 +456,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Address]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -505,6 +490,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order comments]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -538,6 +524,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Coordinates]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -571,6 +558,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order date]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -604,6 +592,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Ordering person's email address]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -637,6 +626,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order name]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -670,6 +660,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Ordering person's phone number]]></fld_comment>
+		<fld_classification>PERSONAL</fld_classification>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -703,6 +694,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order pizza]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -736,6 +728,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Status]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -769,6 +762,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza description]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -802,6 +796,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza diameter]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -835,6 +830,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza name]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -868,6 +864,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza picture]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -901,6 +898,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza price]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -934,6 +932,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza type]]></fld_comment>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -967,6 +966,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment/>
+		<fld_classification/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
@@ -2295,17 +2295,17 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_ref_order>99990</obf_ref_order>
 		<obf_object_id.obj_name>PzaOrderHistoric</obf_object_id.obj_name>
 		<obf_field_id.fld_name>row_ref_id</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>0</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>row_ref_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
@@ -2317,17 +2317,17 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_ref_order>1</obf_ref_order>
 		<obf_object_id.obj_name>PzaOrder</obf_object_id.obj_name>
 		<obf_field_id.fld_name>pzaOrdPizId</obf_field_id.fld_name>
+		<obf_field_id.fld_dbname>ord_piz_id</obf_field_id.fld_dbname>
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_query/>
 		<obf_associate/>
-		<obf_field_id.fld_dbname>ord_piz_id</obf_field_id.fld_dbname>
 		<obf_inline>0</obf_inline>
 		<obf_area_id.ofa_name>PzaOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
