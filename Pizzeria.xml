@@ -1174,7 +1174,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obe_name>pizzeria</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment><![CDATA[Test]]></obe_comment>
+		<obe_comment><![CDATA[Pizzeria web frontend using simple Mustache templating]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>ObjectExternal/pizzeria.js</obe_script_id>

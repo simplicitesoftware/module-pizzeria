@@ -101,5 +101,5 @@ No custom action
 `pizzeria` external object definition
 -------------------------------------
 
-Test
+Pizzeria web frontend using simple Mustache templating
 
