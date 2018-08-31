@@ -213,6 +213,22 @@ Frontend page available on `<root>/ext/pizzeria`
 		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
+	<data>
+		<rsp_login_id.usr_login>pizzeria</rsp_login_id.usr_login>
+		<rsp_group_id.grp_name>PZA_PUBLIC</rsp_group_id.grp_name>
+		<rsp_start_dt>2018-01-01</rsp_start_dt>
+		<rsp_end_dt/>
+		<rsp_activ>1</rsp_activ>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<rsp_login_id.usr_login>public</rsp_login_id.usr_login>
+		<rsp_group_id.grp_name>PZA_PUBLIC</rsp_group_id.grp_name>
+		<rsp_start_dt>2017-01-01</rsp_start_dt>
+		<rsp_end_dt/>
+		<rsp_activ>1</rsp_activ>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>ShortCut</name>
