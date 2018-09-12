@@ -95,8 +95,8 @@ Frontend page available on `<root>/ext/pizzeria`
 	<action>upsert</action>
 	<data>
 		<mod_name>Pizzeria</mod_name>
-		<mod_template_id.mtp_name>ModelBusinessObject</mod_template_id.mtp_name>
-		<mod_doc>Model/Pizzeria.json</mod_doc>
+		<mod_template_id.mtp_name>ModelObject</mod_template_id.mtp_name>
+		<mod_doc>Model/Pizzeria.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/Pizzeria.png</mod_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -104,7 +104,7 @@ Frontend page available on `<root>/ext/pizzeria`
 	<data>
 		<mod_name>PzaOrderStates</mod_name>
 		<mod_template_id.mtp_name>ModelState</mod_template_id.mtp_name>
-		<mod_doc>Model/PzaOrderStates.json</mod_doc>
+		<mod_doc>Model/PzaOrderStates.svg</mod_doc>
 		<mod_json/>
 		<mod_image>Model/PzaOrderStates.png</mod_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -288,8 +288,8 @@ Frontend page available on `<root>/ext/pizzeria`
 	<data>
 		<lov_name>PZA_ORD_STATUS</lov_name>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-		<lov_model_id.mod_name/>
-		<lov_model_id.mod_image/>
+		<lov_model_id.mod_name>PzaOrderStates</lov_model_id.mod_name>
+		<lov_model_id.mod_image>Model/mod_image/0/38/PzaOrderStates.png</lov_model_id.mod_image>
 	</data>
 </object>
 <object>
@@ -1685,7 +1685,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_ref_object_id.obo_name>PzaPizza</obf_ref_object_id.obo_name>
-		<obf_cascad>R</obf_cascad>
+		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
@@ -2337,7 +2337,7 @@ Frontend page available on `<root>/ext/pizzeria`
 		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>1</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
-		<obf_cascad>R</obf_cascad>
+		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
 		<obf_visible>1</obf_visible>
