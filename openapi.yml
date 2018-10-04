@@ -282,6 +282,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PzaOrderHistoric'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -690,6 +694,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PzaOrder'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
@@ -923,6 +931,10 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/PzaPizza'
+        '401':
+          description: Authentication error
+          content:
+            application/json: {}
       parameters:
       - schema:
           type: string
