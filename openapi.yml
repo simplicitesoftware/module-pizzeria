@@ -1,5 +1,11 @@
 components:
   schemas:
+    ActionResult:
+      type: object
+      properties:
+        result:
+          description: Action result
+          type: string
     ArrayOfPzaOrder:
       type: array
       items:
@@ -33,6 +39,15 @@ components:
           type: string
         pzaPizName:
           description: Name
+          type: string
+    PublicationResult:
+      type: object
+      properties:
+        mime:
+          description: MIME type
+          type: string
+        content:
+          description: Content (plain text or base64 encoded)
           type: string
     PzaOrder:
       type: object
@@ -157,6 +172,30 @@ paths:
       - schema:
           type: boolean
         in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
+        required: false
+      - schema:
+          type: boolean
+        in: query
         name: _doc
         description: Documentation?
         required: false
@@ -225,7 +264,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -291,7 +330,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -330,7 +369,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - PzaOrderHistoric
@@ -355,7 +394,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -468,6 +507,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
@@ -601,7 +664,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -703,7 +766,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -742,7 +805,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - PzaOrder
@@ -767,7 +830,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -870,7 +933,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -940,7 +1003,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -979,7 +1042,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       tags:
       - PzaPizza
@@ -1004,7 +1067,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID
+        description: row ID (or _ for all row IDs)
         required: true
       - schema:
           type: string
@@ -1076,6 +1139,30 @@ paths:
         in: query
         name: _metadata
         description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: _crosstab
+        description: Apply pivot table
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _crosstabcubes
+        description: pivot table data as cubes?
         required: false
       - schema:
           type: boolean
