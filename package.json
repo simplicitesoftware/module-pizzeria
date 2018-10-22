@@ -1,8 +1,8 @@
 {
-    "date": "Fri Jul 27 12:34:08 CEST 2018",
+    "date": "Mon Oct 22 12:26:47 CEST 2018",
     "name": "Pizzeria",
     "format": "xml",
-    "description": "This is a sample Pizzeria application (backend and frontend)\n\nFrontend page available on `<root>/ext/pizzeria`\n",
+    "description": "This is a sample Pizzeria application (backend and frontend)\n\nFrontend page available on `<root>/ext/pizzeria`\n\nSonar analysis: `sonar-scanner -Dsonar.exclusions=\"**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less\"`\n\n",
     "repository": {
         "type": "url",
         "url": "https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml"

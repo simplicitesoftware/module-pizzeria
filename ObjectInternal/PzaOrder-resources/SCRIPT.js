@@ -1,4 +1,4 @@
-PzaOrder = (function(ui, $) {
+var PzaOrder = typeof PzaOrder !== "undefined" ? PzaOrder : (function(ui, $) {
 	if (!ui) return; // Do nothing on legacy UI
 	Simplicite.UI.hooks.PzaOrder = function(o, cbk) {
 		try {
@@ -17,8 +17,9 @@ PzaOrder = (function(ui, $) {
 							url: "https://maps.googleapis.com/maps/api/js?key=" + Simplicite.GOOGLE_API_KEY + "&sensor=false&libraries=places&language=en-US",
 							onload: searchbox
 						});
-					} else
+					} else {
 						searchbox();
+					}
 				} catch (el) {
 					console.error(el.message);
 				}

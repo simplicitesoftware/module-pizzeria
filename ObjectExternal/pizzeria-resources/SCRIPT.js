@@ -1,4 +1,4 @@
-if (typeof pizzeria === 'undefined') pizzeria = (function($) {
+var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
 	var app;
 
 	function render(root, pub, banner) {

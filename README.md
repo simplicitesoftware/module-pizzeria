@@ -8,6 +8,9 @@ This is a sample Pizzeria application (backend and frontend)
 
 Frontend page available on `<root>/ext/pizzeria`
 
+Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less"`
+
+
 
 `PzaOrder` business object definition
 -------------------------------------
