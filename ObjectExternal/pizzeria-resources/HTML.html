@@ -16,7 +16,7 @@
 			{{#list}}
 			<div class="col-md-4">
 				<h1 class="text-primary text-center title">{{pzaPizName}}</h1>
-				<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}"/>{{/pzaPizPicture}}</h3>
+				<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}" alt="Pizza picture"/>{{/pzaPizPicture}}</h3>
 				<p class="text-right"><button type="button" data-id="{{row_id}}" class="btn btn-primary btn-md">$ {{#toFixed}}{{pzaPizPrice}}{{/toFixed}}</button></p>
 				<p class="text-left text-muted">{{{pzaPizDesc}}}</p>
 			</div>
@@ -36,11 +36,11 @@
 </template>
 <template id="pizzeria-video-template">
 	<div class="video">
-		<iframe width="560" height="315" src="{{pzaPizVideo}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<iframe title="Pizza video" width="560" height="315" src="{{pzaPizVideo}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	</div>
 </template>
 <template id="pizzeria-order-template">
-	<div class="text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}"/>{{/pzaPizPicture}}</div>
+	<div class="text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}" alt="Pizza picture"/>{{/pzaPizPicture}}</div>
 	<div class="form-group">
 		<label for="pizzeria-name">Name</label>
 		<input type="text" class="form-control" id="pizzeria-name" placeholder="Your name">

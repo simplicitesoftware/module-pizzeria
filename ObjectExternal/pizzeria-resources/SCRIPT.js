@@ -24,7 +24,6 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 					message: Mustache.render($('#pizzeria-order-template').html(), pizza),
 					callback: function(res) {
 						if (res) {
-							alert
 							var ord = app.getBusinessObject('PzaOrder');
 							ord.item.pzaOrdPizId = pizza.row_id;
 							ord.item.pzaOrdName = $('#pizzeria-name').val();
@@ -42,7 +41,7 @@ if (typeof pizzeria === 'undefined') pizzeria = (function($) {
 					},
 					buttons: {
 						confirm: { label: 'Order', className: 'btn-success', callback: function() {
-							alert('ici');	
+							bootbox.alert({ message: "Not yet implemented, sorry" });	
 						}},
 						cancel: { label: 'Cancel', className: 'btn-danger' }
 					}
