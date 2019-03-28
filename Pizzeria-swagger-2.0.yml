@@ -1,0 +1,1053 @@
+#  ___ _            _ _    _ _    __
+# / __(_)_ __  _ __| (_)__(_) |_ /_/
+# \__ \ | '  \| '_ \ | / _| |  _/ -_)
+# |___/_|_|_|_| .__/_|_\__|_|\__\___|
+#             |_| Module: Pizzeria 4.0
+basePath: /api
+paths:
+  /rest/PzaOrderHistoric:
+    get:
+      summary: Search PzaOrderHistoric business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorderhistoric-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfPzaOrderHistoric'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: row_ref_id
+        description: Search filter for Reference
+        type: string
+        required: false
+      - in: query
+        name: row_idx
+        description: Search filter for Version
+        type: integer
+        required: false
+      - in: query
+        name: created_by_hist
+        description: Search filter for User
+        type: string
+        required: false
+      - in: query
+        name: created_dt_hist
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdDate
+        description: Search filter for Order date
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdStatus
+        description: Search filter for Status
+        type: string
+        required: false
+        enum:
+        - PND
+        - VAL
+        - DEL
+        - CNC
+      tags:
+      - PzaOrderHistoric
+  /rest/PzaOrderHistoric/{row_id}:
+    post:
+      summary: Create a new PzaOrderHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorderhistoric-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrderHistoric'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaOrderHistoric'
+        in: body
+        name: body
+      tags:
+      - PzaOrderHistoric
+      consumes:
+      - application/json
+    get:
+      summary: Get a PzaOrderHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorderhistoric-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrderHistoric'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - PzaOrderHistoric
+    delete:
+      summary: Delete a PzaOrderHistoric business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorderhistoric-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - PzaOrderHistoric
+    put:
+      summary: Update a PzaOrderHistoricbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorderhistoric-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrderHistoric'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaOrderHistoric'
+        in: body
+        name: body
+      tags:
+      - PzaOrderHistoric
+      consumes:
+      - application/json
+  /login:
+    get:
+      summary: Login (obtain bearer token)
+      security:
+      - basicAuth: []
+      produces:
+      - text/plain
+      - application/json
+      operationId: login
+      responses:
+        '200':
+          description: Successful login
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: _output
+        description: Optional output format
+        type: string
+        required: false
+        enum:
+        - json
+        - oauth2
+      tags:
+      - session
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/PzaOrder:
+    get:
+      summary: Search PzaOrder business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorder-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfPzaOrder'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdDate
+        description: Search filter for Order date
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdName
+        description: Search filter for Order name
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdPhone
+        description: Search filter for Ordering person's phone number
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdEmail
+        description: Search filter for Ordering person's email address
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdAddress
+        description: Search filter for Address
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdCoordinates
+        description: Search filter for Coordinates
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdComments
+        description: Search filter for Order comments
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdStatus
+        description: Search filter for Status
+        type: string
+        required: false
+        enum:
+        - PND
+        - VAL
+        - DEL
+        - CNC
+      - in: query
+        name: pzaOrdPizId
+        description: Search filter for Order pizza
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdPizId__pzaPizName
+        description: Search filter for Pizza name
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdPizId__pzaPizPicture
+        description: Search filter for Pizza picture
+        type: string
+        required: false
+      - in: query
+        name: pzaOrdPizId__pzaPizPrice
+        description: Search filter for Pizza price
+        type: number
+        required: false
+      tags:
+      - PzaOrder
+  /rest/PzaOrder/{row_id}:
+    post:
+      summary: Create a new PzaOrderbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorder-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrder'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaOrder'
+        in: body
+        name: body
+      tags:
+      - PzaOrder
+      consumes:
+      - application/json
+    get:
+      summary: Get a PzaOrder business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorder-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrder'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - PzaOrder
+    delete:
+      summary: Delete a PzaOrder business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorder-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - PzaOrder
+    put:
+      summary: Update a PzaOrderbusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzaorder-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaOrder'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaOrder'
+        in: body
+        name: body
+      tags:
+      - PzaOrder
+      consumes:
+      - application/json
+  /rest/PzaPizza/{row_id}:
+    post:
+      summary: Create a new PzaPizzabusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzapizza-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaPizza'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaPizza'
+        in: body
+        name: body
+      tags:
+      - PzaPizza
+      consumes:
+      - application/json
+    get:
+      summary: Get a PzaPizza business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzapizza-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaPizza'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - PzaPizza
+    delete:
+      summary: Delete a PzaPizza business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzapizza-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - PzaPizza
+    put:
+      summary: Update a PzaPizzabusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzapizza-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PzaPizza'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/PzaPizza'
+        in: body
+        name: body
+      tags:
+      - PzaPizza
+      consumes:
+      - application/json
+  /rest/PzaPizza:
+    get:
+      summary: Search PzaPizza business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-pzapizza-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfPzaPizza'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: pzaPizName
+        description: Search filter for Pizza name
+        type: string
+        required: false
+      - in: query
+        name: pzaPizPrice
+        description: Search filter for Pizza price
+        type: number
+        required: false
+      - in: query
+        name: pzaPizType
+        description: Search filter for Pizza type
+        type: string
+        required: false
+        enum:
+        - THIN
+        - PAN
+      - in: query
+        name: pzaPizDiameter
+        description: Search filter for Pizza diameter
+        type: integer
+        required: false
+      - in: query
+        name: pzaPizPicture
+        description: Search filter for Pizza picture
+        type: string
+        required: false
+      - in: query
+        name: pzaPizDesc
+        description: Search filter for Pizza description
+        type: string
+        required: false
+      - in: query
+        name: pzaPizVideo
+        description: Search filter for Video
+        type: string
+        required: false
+      tags:
+      - PzaPizza
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: texts
+        description: Texts?
+        type: boolean
+        required: false
+      tags:
+      - session
+host: dev40.dev.simplicite.io
+schemes:
+- https
+securityDefinitions:
+  basicAuth:
+    type: basic
+  bearerAuth:
+    in: header
+    name: Authorization
+    type: apiKey
+definitions:
+  Error404:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 404
+  PzaPizza:
+    type: object
+    properties:
+      pzaPizPicture:
+        description: Pizza picture
+        type: object
+      pzaPizVideo:
+        description: Video
+        type: string
+      pzaPizDiameter:
+        description: Pizza diameter
+        type: integer
+      pzaPizType:
+        description: Pizza type
+        type: string
+        enum:
+        - THIN
+        - PAN
+      pzaPizPrice:
+        description: Pizza price
+        type: number
+      row_id:
+        description: ID
+        type: string
+      pzaPizDesc:
+        description: Pizza description
+        type: string
+      pzaPizName:
+        description: Pizza name
+        type: string
+  PublicationResult:
+    type: object
+    properties:
+      mime:
+        description: MIME type
+        type: string
+      content:
+        description: Content (plain text or base64 encoded)
+        type: string
+  PzaOrderHistoric:
+    type: object
+    properties:
+      row_idx:
+        description: Version
+        type: integer
+      pzaOrdStatus:
+        description: Status
+        type: string
+        enum:
+        - PND
+        - VAL
+        - DEL
+        - CNC
+      created_dt_hist:
+        description: Date
+        type: string
+      row_id:
+        description: ID
+        type: string
+      created_by_hist:
+        description: User
+        type: string
+      pzaOrdDate:
+        description: Order date
+        type: string
+      row_ref_id:
+        description: Reference
+        type: string
+  ArrayOfPzaOrderHistoric:
+    type: array
+    items:
+      $ref: '#/definitions/PzaOrderHistoric'
+  ActionResult:
+    type: object
+    properties:
+      result:
+        description: Action result
+        type: string
+  ArrayOfPzaOrder:
+    type: array
+    items:
+      $ref: '#/definitions/PzaOrder'
+  TreeviewData:
+    type: object
+    properties:
+      item:
+        description: Object item with lists of linked objects' items
+        type: object
+  Error400:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 400
+  Error401:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 401
+  Error500:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 500
+  PzaOrder:
+    type: object
+    properties:
+      pzaOrdComments:
+        description: Order comments
+        type: string
+      pzaOrdAddress:
+        description: Address
+        type: string
+      pzaOrdPizId__pzaPizPrice:
+        description: Pizza price
+        type: number
+      pzaOrdPizId__pzaPizName:
+        description: Pizza name
+        type: string
+      pzaOrdPizId:
+        description: Order pizza
+        type: string
+      pzaOrdPizId__pzaPizPicture:
+        description: Pizza picture
+        type: object
+      pzaOrdEmail:
+        description: Ordering person's email address
+        type: string
+      pzaOrdCoordinates:
+        description: Coordinates
+        type: string
+      pzaOrdStatus:
+        description: Status
+        type: string
+        enum:
+        - PND
+        - VAL
+        - DEL
+        - CNC
+      pzaOrdPhone:
+        description: Ordering person's phone number
+        type: string
+      row_id:
+        description: ID
+        type: string
+      pzaOrdDate:
+        description: Order date
+        type: string
+      pzaOrdName:
+        description: Order name
+        type: string
+  Error403:
+    type: object
+    properties:
+      error:
+        description: Error message
+        type: string
+      status:
+        description: Error status
+        type: integer
+        enum:
+        - 403
+  ArrayOfPzaPizza:
+    type: array
+    items:
+      $ref: '#/definitions/PzaPizza'
+swagger: '2.0'
+info:
+  license:
+    name: Simplicite license
+    url: http://www.simplicitesoftware.com
+  contact:
+    name: Simplicite Software
+    url: http://www.simplicitesoftware.com
+    email: contact@simplicitesoftware.com
+  description: API for module Pizzeria
+  title: Pizzeria
+  version: '4.0'
+tags:
+- name: PzaOrder
+  description: Order
+- name: PzaOrderHistoric
+  description: Order history
+- name: PzaPizza
+  description: Pizza

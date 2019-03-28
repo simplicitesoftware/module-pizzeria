@@ -12,14 +12,11 @@ var PzaOrder = typeof PzaOrder !== "undefined" ? PzaOrder : (function(ui, $) {
 					});
 				}
 				try {
-					if (typeof(google)=="undefined" || typeof(google.maps)=="undefined" || typeof(google.maps.places)=="undefined") {
-						ui.loadScript({
-							url: "https://maps.googleapis.com/maps/api/js?key=" + Simplicite.GOOGLE_API_KEY + "&sensor=false&libraries=places&language=en-US",
-							onload: searchbox
-						});
-					} else {
+					// Loads Google Maps JavaScript lib if not yet loaded
+					if (typeof(google)=="undefined" || typeof(google.maps)=="undefined" || typeof(google.maps.places)=="undefined")
+						ui.loadScript({ url: Simplicite.GOOGLE_MAPS_JS_URL, onload: searchbox });
+					else
 						searchbox();
-					}
 				} catch (el) {
 					console.error(el.message);
 				}

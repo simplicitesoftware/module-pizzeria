@@ -1,3 +1,10 @@
+<!--
+ ___ _            _ _    _ _    __
+/ __(_)_ __  _ __| (_)__(_) |_ /_/
+\__ \ | '  \| '_ \ | / _| |  _/ -_)
+|___/_|_|_|_| .__/_|_\__|_|\__\___|
+            |_| 
+-->
 ![](https://www.simplicite.io/resources//logos/logo250.png)
 * * *
 
@@ -9,8 +16,6 @@ This is a sample Pizzeria application (backend and frontend)
 Frontend page available on `<root>/ext/pizzeria`
 
 Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less"`
-
-
 
 `PzaOrder` business object definition
 -------------------------------------
