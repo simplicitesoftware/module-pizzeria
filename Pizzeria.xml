@@ -49,7 +49,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/pizzeria/pizzeria_gen.css</thm_css_doc>
-		<thm_addon>files/Theme/pizzeria/addon.less</thm_addon>
+		<thm_addon/>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>
@@ -144,6 +144,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
+		<usr_last_logon/>
 	</data>
 </object>
 <object>
@@ -462,6 +463,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>100</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -496,6 +498,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>1000000</fld_size>
 		<fld_minsize/>
 		<fld_precision>w=50 h=5</fld_precision>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -530,6 +533,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>50</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -564,6 +568,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>19</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[[DATETIME]]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -598,6 +603,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>100</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -632,6 +638,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>100</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -666,6 +673,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>20</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -700,6 +708,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>11</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -734,6 +743,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>20</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[PND]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -768,6 +778,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>10000</fld_size>
 		<fld_minsize/>
 		<fld_precision>hf=10 hl=5 w=60</fld_precision>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -802,6 +813,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>3</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[12]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -836,6 +848,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>100</fld_size>
 		<fld_minsize/>
 		<fld_precision>w=30</fld_precision>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>1</fld_indexable>
 		<fld_autocomp>1</fld_autocomp>
@@ -870,6 +883,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>11</fld_size>
 		<fld_minsize/>
 		<fld_precision>75</fld_precision>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -904,6 +918,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>10</fld_size>
 		<fld_minsize/>
 		<fld_precision>2</fld_precision>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[0]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -938,6 +953,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>10</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault><![CDATA[THIN]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -972,6 +988,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<fld_size>1024</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
@@ -1288,7 +1305,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -1348,7 +1365,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<obo_refcount>0</obo_refcount>
 		<obo_tree>0</obo_tree>
 		<obo_viewmode>V</obo_viewmode>
-		<obo_historic>0</obo_historic>
+		<obo_historic/>
 		<obo_printable>1</obo_printable>
 		<obo_followlink>1</obo_followlink>
 		<obo_mergeable>0</obo_mergeable>
@@ -2127,6 +2144,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -2150,6 +2168,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
 		<obf_rendering/>
+		<obf_treedepth/>
 		<obf_area_id.ofa_name>PzaOrder-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -2639,7 +2658,12 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>15</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>PzaOrder-T1</cax_crosstab_id.ctb_name>
@@ -2654,7 +2678,12 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<cax_subtotal>1</cax_subtotal>
 		<cax_formula/>
 		<cax_hidden>0</cax_hidden>
+		<cax_objfield_id.obf_field_id.fld_type>7</cax_objfield_id.obf_field_id.fld_type>
+		<cax_dategroup/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<cax_unitscale/>
+		<cax_unitfunct/>
+		<cax_unitlabel/>
 	</data>
 </object>
 <object>
