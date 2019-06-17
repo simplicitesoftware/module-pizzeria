@@ -268,6 +268,7 @@ paths:
         enum:
         - json
         - oauth2
+        - token
       tags:
       - session
   /logout:

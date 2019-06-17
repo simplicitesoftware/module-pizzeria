@@ -519,6 +519,7 @@ paths:
           enum:
           - json
           - oauth2
+          - token
         in: query
         name: _output
         description: Optional output format
