@@ -1,36 +1,26 @@
 <template id="pizzeria-template">
 <div class="cover">
 	<div class="cover-image" style="background-image : url({{bannerURL}})"></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center head-title">
-				<h1><span style="font-size: 1.5em">Pizzeria</span></h1>
-				<div class="baseline"><h2>We make the best pizzas in town!</h2></div>
-			</div>
+	<div class="row">
+		<div class="col-md-12 text-center head-title">
+			<h1>Pizzeria</h1>
+			<h2>We make the best pizzas in town!</h2>
 		</div>
 	</div>
 </div>
-<div class="section-s">
-	<div class="container">
-		<div class="row">
-			{{#list}}
-			<div class="col-md-4">
-				<h1 class="text-primary text-center title">{{pzaPizName}}</h1>
-				<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}" alt="{{pzaPizName}}"/>{{/pzaPizPicture}}</h3>
-				<p class="text-right"><button type="button" data-id="{{row_id}}" class="btn btn-primary btn-md">$ {{#toFixed}}{{pzaPizPrice}}{{/toFixed}}</button></p>
-				<p class="text-left text-muted">{{{pzaPizDesc}}}</p>
-			</div>
-			{{/list}}
-		</div>
+<div class="row">
+	{{#list}}
+	<div class="col-md-4">
+		<h1 class="text-primary text-center title">{{pzaPizName}}</h1>
+		<h3 class="text-muted text-center">{{#pzaPizPicture}}<img data-id="{{row_id}}" src="data:{{mime}};base64,{{content}}" alt="{{pzaPizName}}"/>{{/pzaPizPicture}}</h3>
+		<p class="text-right"><button type="button" data-id="{{row_id}}" class="btn btn-primary btn-md">$ {{#toFixed}}{{pzaPizPrice}}{{/toFixed}}</button></p>
+		<p class="text-left text-muted">{{{pzaPizDesc}}}</p>
 	</div>
+	{{/list}}
 </div>
-<div class="section-s">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<hr><p class="text-center">&copy; Simplcit&eacute; Software</p>
-			</div>
-		</div>
+<div class="row">
+	<div class="col-md-12">
+		<hr><p class="text-center">&copy; Simplcit&eacute; Software</p>
 	</div>
 </div>
 </template>

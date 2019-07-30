@@ -3,7 +3,6 @@
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
 #             |_| Module: Pizzeria 4.0
-basePath: /api
 paths:
   /rest/PzaOrderHistoric:
     get:
@@ -828,9 +827,6 @@ paths:
         required: false
       tags:
       - session
-host: dev40.dev.simplicite.io
-schemes:
-- https
 securityDefinitions:
   basicAuth:
     type: basic

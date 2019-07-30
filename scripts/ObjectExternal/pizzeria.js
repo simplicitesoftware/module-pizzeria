@@ -1,16 +1,26 @@
 pizzeria.display = function(params) {
 	var g = this.getGrant();
 	this.setDecoration(false);
-	var wp = new JQueryWebPage(params.getRoot(), this.getDisplay());
-	wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
-	wp.appendAjax();
-	wp.appendMustache();
-	wp.appendJSIncludes(HTMLTool.bootstrapJS());
-	wp.appendJSIncludes(HTMLTool.bootboxJS());
-	wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
-	wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
-	wp.appendJSInclude("https://maps.googleapis.com/maps/api/js?key=" + g.getParameter("GOOGLE_API_KEY") + "&libraries=places&sensor=false&language=en-US");
-	wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
-	wp.setReady("pizzeria.render('" + wp.getRoot() + "', " + this.isPublic() + ", '" + HTMLTool.getResourceImageURL(this, "BANNER") + "')");
-	return wp.toString();
+
+	var banner = HTMLTool.getResourceImageURL(this, "BANNER");
+	var render = "pizzeria.render('" + Globals.getContextPath() + "', " + this.isPublic() + ", '" + banner + "')";
+
+	if (this.isPublic()) {
+		var wp = new BootstrapWebPage(params.getRoot(), this.getDisplay(), false);
+		wp.setFluid(true);
+		wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
+		wp.appendAjax();
+		wp.appendMustache();
+		wp.appendJSIncludes(HTMLTool.bootboxJS());
+		wp.appendJSInclude("https://maps.googleapis.com/maps/api/js?key=" + g.getParameter("GOOGLE_API_KEY") + "&libraries=places&sensor=false&language=en-US");
+		wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
+		wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
+		wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
+		wp.setReady(render);
+		return wp.toString();
+	} else {
+		this.addMustache();
+		this.addExtraJS(HTMLTool.bootboxJS());
+		return this.javascript(render);
+	}
 };
