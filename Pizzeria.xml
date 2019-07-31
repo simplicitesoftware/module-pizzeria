@@ -49,7 +49,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
 		<thm_css_doc>files/Theme/pizzeria/pizzeria_gen.css</thm_css_doc>
-		<thm_addon/>
+		<thm_addon>files/Theme/pizzeria/addon.less</thm_addon>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
 		<thm_font/>

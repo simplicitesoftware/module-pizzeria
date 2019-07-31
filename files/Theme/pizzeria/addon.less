@@ -1,0 +1,19 @@
+@pizzeria1: #fff4e4;
+@pizzeria2: #fdf9f2;
+@pizzeria3: #f6e6ce;
+
+.panel-default > .panel-heading, .panel-default > .panel-footer {
+	background-color: @pizzeria1;
+}
+.panel-body, .tray-content {
+	background-color: lighten(@pizzeria1, 4%);
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: @pizzeria2;
+}
+.table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > th, .table tr.totals > td {
+	background-color: @pizzeria3;
+}
+.list-clickable:hover td {
+	background-color: darken(@pizzeria2, 2%);
+}
