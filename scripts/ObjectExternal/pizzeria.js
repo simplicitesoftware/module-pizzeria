@@ -7,7 +7,6 @@ pizzeria.display = function(params) {
 
 	if (this.isPublic()) {
 		var wp = new BootstrapWebPage(params.getRoot(), this.getDisplay(), false);
-		wp.setFluid(true);
 		wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
 		wp.appendAjax();
 		wp.appendMustache();

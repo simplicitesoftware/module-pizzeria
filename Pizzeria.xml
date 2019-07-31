@@ -7,7 +7,7 @@
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-11-13 14:47:42</mdl_lastupd>
+		<mdl_lastupd>2019-07-31 10:33:57</mdl_lastupd>
 		<mdl_comment><![CDATA[This is a sample Pizzeria application (backend and frontend)
 
 Frontend page available on `<root>/ext/pizzeria`
@@ -158,7 +158,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
-		<usr_last_logon>2019-07-30 18:36:24</usr_last_logon>
+		<usr_last_logon>2019-07-31 10:25:06</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
