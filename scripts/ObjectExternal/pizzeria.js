@@ -11,7 +11,7 @@ pizzeria.display = function(params) {
 		wp.appendAjax();
 		wp.appendMustache();
 		wp.appendJSIncludes(HTMLTool.bootboxJS());
-		wp.appendJSInclude("https://maps.googleapis.com/maps/api/js?key=" + g.getParameter("GOOGLE_API_KEY") + "&libraries=places&sensor=false&language=en-US");
+		wp.appendJSInclude("https://maps.googleapis.com/maps/api/js?key=" + g.getParameter("GOOGLE_API_KEY") + "&libraries=places&language=en-US");
 		wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
 		wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
 		wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));

@@ -158,7 +158,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
-		<usr_last_logon>2019-07-31 10:25:06</usr_last_logon>
+		<usr_last_logon>2019-07-31 17:06:54</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>

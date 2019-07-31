@@ -47,7 +47,7 @@ var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
 						}},
 						cancel: { label: 'Cancel', className: 'btn-danger' }
 					}
-				}).on('shown.bs.modal', function() {debugger;
+				}).on('shown.bs.modal', function() {
 					var addr = $('#pizzeria-address')[0];
 					var ac = new google.maps.places.Autocomplete(addr);
 					ac.addListener("place_changed", function() {
@@ -55,9 +55,9 @@ var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
 						$('#pizzeria-coordinates').val(l.lat() + "," + l.lng());
 					});
 				});
-			})
+			});
 		}, { pzaPizAvailable: true }, { inlineDocs: true });
 	}
 
-	return { render: render }
+	return { render: render };
 })(jQuery);
