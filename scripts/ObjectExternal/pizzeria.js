@@ -1,12 +1,12 @@
 pizzeria.display = function(params) {
 	var g = this.getGrant();
-	this.setDecoration(false);
+	var pub = this.isPublic();
 
-	var banner = HTMLTool.getResourceImageURL(this, "BANNER");
+	this.setDecoration(!pub);
+	var render = this.getName() + ".render(" + params.toJSONObject().put("bannerURL", HTMLTool.getResourceImageURL(this, "BANNER")).put("pub", pub).toString() + ")";
+
 	var gmapJS = new GMapTool(g).getJSURL();
-	var render = "pizzeria.render('" + Globals.getContextPath() + "', " + this.isPublic() + ", '" + banner + "')";
-
-	if (this.isPublic()) {
+	if (pub) {
 		var wp = new BootstrapWebPage(params.getRoot(), this.getDisplay(), false);
 		wp.setFavicon(HTMLTool.getResourceIconURL(this, "FAVICON"))
 		wp.appendAjax();

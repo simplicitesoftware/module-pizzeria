@@ -6,6 +6,7 @@
 	<data>
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
+		<mdl_prefix>PZA</mdl_prefix>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/pizzeria-app-4.0.xml]]></mdl_url>
 		<mdl_lastupd>2019-07-31 10:33:57</mdl_lastupd>
 		<mdl_comment><![CDATA[This is a sample Pizzeria application (backend and frontend)
@@ -72,16 +73,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 	<action>upsert</action>
 	<data>
 		<viw_name>PzaAdminHome</viw_name>
-		<viw_template><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-		<tr>
-			<td class="area">[AREA:2:=]</td>
-		</tr>
-	</tbody>
-</table>]]></viw_template>
 		<viw_ui><![CDATA[<div class="row">
 	<div class="area" data-area="2:="></div>
 	<div class="area" data-area="1:="></div>
@@ -95,7 +86,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 	</data>
 	<data>
 		<viw_name>PzaHome</viw_name>
-		<viw_template><![CDATA[<div class="area">[AREA:1:=]</div>]]></viw_template>
 		<viw_ui><![CDATA[<div class="area" data-area="1:="></div>]]></viw_ui>
 		<viw_order>500</viw_order>
 		<viw_icon>pza-pizzeria</viw_icon>
@@ -158,7 +148,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
-		<usr_last_logon>2019-07-31 17:43:26</usr_last_logon>
+		<usr_last_logon>2019-10-15 14:25:31</usr_last_logon>
 		<usr_dateformat/>
 	</data>
 </object>
@@ -1108,14 +1098,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 	<action>upsert</action>
 	<data>
 		<tpl_name>PzaOrder</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1]</td>
-			<td class="area">[AREA:2]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="row">
   <div class="col-sm-6">
     <div class="area" data-area="1"></div>
@@ -1131,17 +1113,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 	</data>
 	<data>
 		<tpl_name>PzaPizza</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area" colspan="2">[AREA:1]</td>
-		</tr>
-		<tr>
-			<td class="area">[AREA:2]</td>
-			<td class="area">[AREA:3]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-12">
@@ -1169,7 +1140,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<ofa_name>PzaOrder-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="pzaOrdDate"></div>
   <div class="field" data-field="pzaOrdName"></div>
@@ -1187,7 +1157,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<ofa_name>PzaOrder-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="pzaOrdPizId"></div>
   <div class="field" data-field="pzaOrdPizId__pzaPizName"></div>
@@ -1201,7 +1170,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<ofa_name>PzaPizza-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="pzaPizName"></div>
   <div class="field" data-field="pzaPizPrice"></div>
@@ -1214,7 +1182,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<ofa_name>PzaPizza-2</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="pzaPizType"></div>
   <div class="field" data-field="pzaPizDiameter"></div>
@@ -1227,7 +1194,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<ofa_name>PzaPizza-3</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="pzaPizDesc"></div>
   <div class="field" data-field="pzaPizVideo"></div>
@@ -1262,7 +1228,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>scripts/ObjectExternal/pizzeria.js</obe_script_id>
-		<obe_icon/>
+		<obe_icon>pza-pizza</obe_icon>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
@@ -2808,7 +2774,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<vwi_show>PzaOrder</vwi_show>
 		<vwi_url/>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -2827,7 +2792,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<vwi_show>PzaOrder</vwi_show>
 		<vwi_url><![CDATA[ztable=no&zstotal=no&zcontrol=no&zgraph=bar_stack]]></vwi_url>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name>PzaOrder-T1</vwi_crosstab_id.ctb_name>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -2846,7 +2810,6 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<vwi_show/>
 		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("pizzeria")]]]></vwi_url>
 		<vwi_image/>
-		<vwi_graph_id.gph_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
 		<vwi_printtmpl_id.prt_lang/>
@@ -3126,6 +3089,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3137,6 +3101,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3148,6 +3113,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3159,6 +3125,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3170,6 +3137,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3181,6 +3149,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3192,6 +3161,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3203,6 +3173,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3214,6 +3185,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3225,6 +3197,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3236,6 +3209,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3247,6 +3221,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3258,6 +3233,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3269,6 +3245,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3280,6 +3257,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3291,6 +3269,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3302,6 +3281,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3313,6 +3293,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3324,6 +3305,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3335,6 +3317,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3346,6 +3329,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3357,6 +3341,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3368,6 +3353,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3379,6 +3365,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3390,6 +3377,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3401,6 +3389,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3412,6 +3401,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3423,6 +3413,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3434,6 +3425,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3445,6 +3437,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3456,6 +3449,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -3467,6 +3461,7 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 </object>
 <object>
@@ -3765,6 +3760,16 @@ Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectEx
 		<tsl_value>Pizzeria</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+		<dt_name>Pizzeria-data</dt_name>
+		<dt_file>data/Pizzeria-data.zip</dt_file>
+		<dt_desc><![CDATA[Pizzeria data]]></dt_desc>
 	</data>
 </object>
 </simplicite>

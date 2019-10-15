@@ -3,6 +3,7 @@
     "name": "Pizzeria",
     "format": "xml",
     "description": "This is a sample Pizzeria application (backend and frontend)\n\nFrontend page available on `<root>/ext/pizzeria`\n\nSonar analysis: `sonar-scanner -Dsonar.exclusions=\"**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less\"`",
+    "files": ["Pizzeria.xml"],
     "repository": {},
     "version": "4.0",
     "dependencies": [{"Simplicite": "4.0"}]

@@ -1,14 +1,28 @@
 var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
 	var app, piz;
 
-	function render(root, pub, banner) {
-		// ZZZ Using parent page only makes sense for **non public** access to this page ZZZ
-		app = (!pub && parent && parent.Simplicite ? parent.Simplicite.Application : null) || new Simplicite.Ajax(root, 'api', 'pizzeria', 'simplicite');
+	/**
+	 * Render
+	 * @param params Parameters
+	 * @function
+	 */
+	function render(params) {
+		console.log(params);
+		
+		app = app || (params.pub
+			? new Simplicite.Ajax(params.root, 'api', 'pizzeria', 'simplicite')
+			: Simplicite.Application); // Internal
+
 		piz = app.getBusinessObject('PzaPizza');
+		piz.bannerURL = params.bannerURL;
 		piz.toFixed = function() { return function(n, r) { return parseFloat(r(n)).toFixed(2); } }; // Mustache rendering for decimal
-		piz.bannerURL = banner;
+
+		var div = $('#pizzeria');
+		if (!params.pub) div.css('min-height', '1000px');
+
 		piz.search(function() {
-			var p = $('#pizzeria').html(Mustache.render($('#pizzeria-template').html(), piz));
+			var p = div.html(Mustache.render($('#pizzeria-template').html(), piz));
+			
 			p.find('img').click(function() {
 				var pizza = piz.getItem($(this).data('id').toString()); // Get list item from row ID
 				if (pizza.pzaPizVideo)
@@ -18,6 +32,7 @@ var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
 						message: Mustache.render($('#pizzeria-video-template').html(), pizza)
 					});
 			});
+			
 			p.find('button').click(function() {
 				var pizza = piz.getItem($(this).data('id').toString()); // Get list item from row ID
 				bootbox.confirm({
