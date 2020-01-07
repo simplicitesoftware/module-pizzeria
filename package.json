@@ -1,5 +1,5 @@
 {
-    "date": "Wed Jul 31 10:33:57 CEST 2019",
+    "date": "Tue Oct 15 14:36:47 CEST 2019",
     "name": "Pizzeria",
     "format": "xml",
     "description": "This is a sample Pizzeria application (backend and frontend)\n\nFrontend page available on `<root>/ext/pizzeria`\n\nSonar analysis: `sonar-scanner -Dsonar.exclusions=\"**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less\"`",

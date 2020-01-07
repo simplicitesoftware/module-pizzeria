@@ -868,7 +868,7 @@ definitions:
         description: Pizza price
         type: number
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       pzaPizDesc:
         description: Pizza description
@@ -903,7 +903,7 @@ definitions:
         description: Date
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       created_by_hist:
         description: User
@@ -1006,7 +1006,7 @@ definitions:
         description: Ordering person's phone number
         type: string
       row_id:
-        description: ID
+        description: Unique technical row ID
         type: string
       pzaOrdDate:
         description: Order date
