@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 23:36:31</mdl_lastupd>
+		<mdl_lastupd>2020-01-17 23:36:58</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
@@ -41,7 +41,7 @@ To import this module:
 In order to have the frontend working the password for the
 webservices-only user `pizzeria` must be `simplicite`.
 
-This ca ben acheived by importing the follwing XML:
+This can be acheived by importing the following XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

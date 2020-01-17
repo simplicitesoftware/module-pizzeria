@@ -38,7 +38,7 @@ To import this module:
 In order to have the frontend working the password for the
 webservices-only user `pizzeria` must be `simplicite`.
 
-This ca ben acheived by importing the follwing XML:
+This can be acheived by importing the following XML:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
