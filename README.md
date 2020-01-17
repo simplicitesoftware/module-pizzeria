@@ -11,16 +11,64 @@
 `Pizzeria` module definition
 ============================
 
-This is a sample Pizzeria application (backend and frontend)
+### Introduction
 
-Frontend page available on `<root>/ext/pizzeria`
+This is a sample **Pizzeria** application (backend and frontend).
 
-Sonar analysis: `sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less"`
+### Import
+
+To import this module:
+
+- Create a module named `Pizzeria`
+- Set the settings as:
+
+```json
+{
+	"type": "git",
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
+	}
+}
+```
+
+- Click on the _Import module_ button
+
+### Configure
+
+In order to have the frontend working the password for the
+webservices-only user `pizzeria` must be `simplicite`.
+
+This ca ben acheived by importing the follwing XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<simplicite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<object>
+	<name>UserPwd</name>
+	<action>update</action>
+	<data>
+		<usr_login_read>pizzeria</usr_login_read>
+		<usr_password>simplicite</usr_password>
+	</data>
+</object>
+</simplicite>
+```
+
+### Quality
+
+This module can be analysed by the **SonarQube** quality analysis tool with
+the follwing command:
+
+```bash
+sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-resources/STYLES.less"`
+```
+
+**Note**: this module is implemented using the **Rhino** scripting language on server-side.
 
 `PzaOrder` business object definition
 -------------------------------------
 
-Order business object
+Pizza **order** business object
 
 ### Fields
 
@@ -54,7 +102,10 @@ No custom action
 `PzaOrderHistoric` business object definition
 ---------------------------------------------
 
+Pizza **order** history business object, tracks changes on:
 
+- Date
+- Status
 
 ### Fields
 
@@ -82,7 +133,7 @@ No custom action
 `PzaPizza` business object definition
 -------------------------------------
 
-Pizza business object
+**Pizza** business object
 
 ### Fields
 
@@ -94,7 +145,7 @@ Pizza business object
 | `pzaPizDiameter`                                             | int(3)                                   |          | yes       |          | Pizza diameter                                                                   |
 | `pzaPizPicture`                                              | image                                    |          | yes       |          | Pizza picture                                                                    |
 | `pzaPizDesc`                                                 | html(10000)                              |          | yes       |          | Pizza description                                                                |
-| `pzaPizVideo`                                                | url(1024)                                |          | yes       |          | -                                                                                |
+| `pzaPizVideo`                                                | url(1024)                                |          | yes       |          | Pizza presentation video                                                         |
 
 ### Lists
 

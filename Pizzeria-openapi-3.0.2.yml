@@ -23,7 +23,7 @@ components:
           description: Pizza picture
           type: object
         pzaPizVideo:
-          description: Video
+          description: Pizza presentation video
           type: string
         pzaPizDiameter:
           description: Pizza diameter
@@ -339,7 +339,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrderHistoric
@@ -378,7 +378,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -439,7 +439,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrderHistoric
@@ -489,7 +489,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrderHistoric
@@ -714,7 +714,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrder
@@ -753,7 +753,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -814,7 +814,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrder
@@ -864,7 +864,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaOrder
@@ -909,7 +909,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaPizza
@@ -948,7 +948,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       - schema:
           type: boolean
@@ -1009,7 +1009,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaPizza
@@ -1059,7 +1059,7 @@ paths:
           type: string
         in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         required: true
       tags:
       - PzaPizza
@@ -1157,7 +1157,7 @@ paths:
           type: string
         in: query
         name: pzaPizVideo
-        description: Search filter for Video
+        description: Search filter for Pizza presentation video
         required: false
       tags:
       - PzaPizza

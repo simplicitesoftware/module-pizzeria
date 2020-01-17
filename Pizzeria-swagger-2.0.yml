@@ -108,7 +108,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -146,7 +146,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - in: query
@@ -195,7 +195,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       tags:
@@ -231,7 +231,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -425,7 +425,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -463,7 +463,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - in: query
@@ -512,7 +512,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       tags:
@@ -548,7 +548,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -587,7 +587,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -625,7 +625,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - in: query
@@ -674,7 +674,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       tags:
@@ -710,7 +710,7 @@ paths:
       parameters:
       - in: path
         name: row_id
-        description: row ID (or empty or _ for all row IDs)
+        description: Row ID (or empty or _ for all row IDs)
         type: string
         required: true
       - schema:
@@ -799,7 +799,7 @@ paths:
         required: false
       - in: query
         name: pzaPizVideo
-        description: Search filter for Video
+        description: Search filter for Pizza presentation video
         type: string
         required: false
       tags:
@@ -853,7 +853,7 @@ definitions:
         description: Pizza picture
         type: object
       pzaPizVideo:
-        description: Video
+        description: Pizza presentation video
         type: string
       pzaPizDiameter:
         description: Pizza diameter
