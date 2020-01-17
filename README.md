@@ -54,6 +54,12 @@ This ca ben acheived by importing the follwing XML:
 </simplicite>
 ```
 
+### Load data
+
+Sample data is provided as a module's dataset.
+
+Open this dataset and click on the _Apply button after having imported the module and made a full clear cache.
+
 ### Quality
 
 This module can be analysed by the **SonarQube** quality analysis tool with

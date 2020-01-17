@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 18:17:05</mdl_lastupd>
+		<mdl_lastupd>2020-01-17 23:36:31</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
@@ -56,6 +56,12 @@ This ca ben acheived by importing the follwing XML:
 </object>
 </simplicite>
 ```
+
+### Load data
+
+Sample data is provided as a module's dataset.
+
+Open this dataset and click on the _Apply button after having imported the module and made a full clear cache.
 
 ### Quality
 
