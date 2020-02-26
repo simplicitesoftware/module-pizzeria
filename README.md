@@ -58,7 +58,7 @@ This can be acheived by importing the following XML:
 
 Sample data is provided as a module's dataset.
 
-Open this dataset and click on the _Apply button after having imported the module and made a full clear cache.
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
 
 ### Quality
 
@@ -87,7 +87,7 @@ Pizza **order** business object
 | `pzaOrdAddress`                                              | char(100)                                | yes      | yes       | yes      | Address                                                                          |
 | `pzaOrdCoordinates`                                          | geocoords                                |          | yes       |          | Coordinates                                                                      |
 | `pzaOrdComments`                                             | text(1000000)                            |          | yes       |          | Order comments                                                                   |
-| `pzaOrdStatus`                                               | enum(7) using `PZA_ORD_STATUS` list      | yes      | yes       |          | Status                                                                           |
+| `pzaOrdStatus`                                               | enum(20) using `PZA_ORD_STATUS` list     | yes      | yes       |          | Status                                                                           |
 | `pzaOrdPizId` link to **`PzaPizza`**                         | id                                       | yes      | yes       |          | Order pizza                                                                      |
 | _Ref. `pzaOrdPizId.pzaPizName`_                              | _regexp(100)_                            |          |           |          | _Pizza name_                                                                     |
 | _Ref. `pzaOrdPizId.pzaPizPicture`_                           | _image_                                  |          |           |          | _Pizza picture_                                                                  |
@@ -100,10 +100,6 @@ Pizza **order** business object
     - `VAL` Validated
     - `DEL` Delivered
     - `CNC` Cancelled
-
-### Custom actions
-
-No custom action
 
 `PzaOrderHistoric` business object definition
 ---------------------------------------------
@@ -122,7 +118,7 @@ Pizza **order** history business object, tracks changes on:
 | `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
 | `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
 | `pzaOrdDate`                                                 | datetime                                 | yes*     |           |          | Order date                                                                       |
-| `pzaOrdStatus`                                               | enum(7) using `PZA_ORD_STATUS` list      | yes      | yes       |          | Status                                                                           |
+| `pzaOrdStatus`                                               | enum(20) using `PZA_ORD_STATUS` list     | yes      | yes       |          | Status                                                                           |
 
 ### Lists
 
@@ -131,10 +127,6 @@ Pizza **order** history business object, tracks changes on:
     - `VAL` Validated
     - `DEL` Delivered
     - `CNC` Cancelled
-
-### Custom actions
-
-No custom action
 
 `PzaPizza` business object definition
 -------------------------------------
@@ -147,7 +139,7 @@ No custom action
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
 | `pzaPizName`                                                 | regexp(100)                              | yes*     | yes       |          | Pizza name                                                                       |
 | `pzaPizPrice`                                                | float(10, 2)                             | yes      | yes       |          | Pizza price                                                                      |
-| `pzaPizType`                                                 | enum(7) using `APP_PIZ_TYPE` list        | yes      | yes       |          | Pizza type                                                                       |
+| `pzaPizType`                                                 | enum(10) using `APP_PIZ_TYPE` list       | yes      | yes       |          | Pizza type                                                                       |
 | `pzaPizDiameter`                                             | int(3)                                   |          | yes       |          | Pizza diameter                                                                   |
 | `pzaPizPicture`                                              | image                                    |          | yes       |          | Pizza picture                                                                    |
 | `pzaPizDesc`                                                 | html(10000)                              |          | yes       |          | Pizza description                                                                |
@@ -158,10 +150,6 @@ No custom action
 * `APP_PIZ_TYPE`
     - `THIN` Thin
     - `PAN` Pan
-
-### Custom actions
-
-No custom action
 
 `pizzeria` external object definition
 -------------------------------------

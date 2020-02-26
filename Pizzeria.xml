@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix/>
+		<mdl_prefix>pza</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 23:36:58</mdl_lastupd>
+		<mdl_lastupd>2020-02-27 00:21:55</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
@@ -61,7 +61,7 @@ This can be acheived by importing the following XML:
 
 Sample data is provided as a module's dataset.
 
-Open this dataset and click on the _Apply button after having imported the module and made a full clear cache.
+Open this dataset and click on the _Apply_ button after having imported the module and made a full clear cache.
 
 ### Quality
 
@@ -1363,8 +1363,10 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>ord</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>PzaOrderHistoric</obo_name>
@@ -1428,6 +1430,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_dashboard>1</obo_dashboard>
 		<obo_prefix/>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 	<data>
 		<obo_name>PzaPizza</obo_name>
@@ -1486,8 +1490,10 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
-		<obo_prefix/>
+		<obo_prefix>piz</obo_prefix>
 		<obo_search_ts/>
+		<obo_minrows/>
+		<obo_maxrows/>
 	</data>
 </object>
 <object>
