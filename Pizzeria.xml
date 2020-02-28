@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>Pizzeria</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix/>
+		<mdl_prefix>pza</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-27 11:22:26</mdl_lastupd>
+		<mdl_lastupd>2020-02-28 00:04:15</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
@@ -207,7 +207,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_extra>1</usr_extra>
 		<usr_subhead>1</usr_subhead>
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
-		<usr_last_logon>2019-10-15 14:25:31</usr_last_logon>
+		<usr_last_logon>2020-02-28 12:38:54</usr_last_logon>
 		<usr_dateformat/>
 		<usr_uuid>77165e1d-2db7-4b48-85d2-da70a9b8fdcb</usr_uuid>
 	</data>
