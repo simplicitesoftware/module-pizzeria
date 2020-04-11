@@ -81,6 +81,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<sys_code>PZA_MAX_DISTANCE</sys_code>
 		<sys_value><![CDATA[25]]></sys_value>
+		<sys_value2/>
 		<sys_type>PRV</sys_type>
 		<sys_desc><![CDATA[Max distance for deliveries]]></sys_desc>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -88,6 +89,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<sys_code>PZA_ORIGIN_COORDINATES</sys_code>
 		<sys_value><![CDATA[33.83730380000001,-84.37004990000003]]></sys_value>
+		<sys_value2/>
 		<sys_type>PRV</sys_type>
 		<sys_desc><![CDATA[Coordinates of origin point for deliveries]]></sys_desc>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>

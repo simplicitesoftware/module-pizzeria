@@ -1,3 +1,8 @@
+PzaOrder.preValidate = function() {
+	var f = this.getField("pzaOrdPhone");
+	f.setValue(new PhoneNumTool("us").getNationalNumber(f.getValue()));
+};
+
 PzaOrder.preCreate = function() {
 	try {
 		var origin = this.getGrant().getParameter("PZA_ORIGIN_COORDINATES");

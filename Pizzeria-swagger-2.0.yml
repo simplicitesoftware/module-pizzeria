@@ -902,6 +902,7 @@ definitions:
       created_dt_hist:
         description: Date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_id:
         description: Unique technical row ID
         type: string
@@ -911,6 +912,7 @@ definitions:
       pzaOrdDate:
         description: Order date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       row_ref_id:
         description: Reference
         type: string
@@ -994,6 +996,7 @@ definitions:
       pzaOrdCoordinates:
         description: Coordinates
         type: string
+        example: latitude;longitude
       pzaOrdStatus:
         description: Status
         type: string
@@ -1011,6 +1014,7 @@ definitions:
       pzaOrdDate:
         description: Order date
         type: string
+        example: yyyy-MM-dd HH:mm:ss
       pzaOrdName:
         description: Order name
         type: string
