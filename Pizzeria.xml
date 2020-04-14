@@ -14,7 +14,9 @@
 	}
 }]]></mdl_url>
 		<mdl_lastupd>2020-02-28 00:04:15</mdl_lastupd>
-		<mdl_comment><![CDATA[### Introduction
+		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.simplicite.modules%3APizzeria&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.simplicite.modules%3APizzeria)
+
+### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
 

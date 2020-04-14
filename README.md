@@ -11,6 +11,8 @@
 `Pizzeria` module definition
 ============================
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.simplicite.modules%3APizzeria&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.simplicite.modules%3APizzeria)
+
 ### Introduction
 
 This is a sample **Pizzeria** application (backend and frontend).
