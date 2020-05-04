@@ -2996,7 +2996,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/pizzeria-module.png</res_image>
+		<res_image>resources/Disposition/default/pizzeria-module.svg</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3010,11 +3010,11 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		</res_object>
 		<res_type>IMG</res_type>
 		<res_lang>ANY</res_lang>
-		<res_code>pizzeria-module-full</res_code>
+		<res_code>pizzeria-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
 		<res_file_compiled/>
-		<res_image>resources/Disposition/default/pizzeria-module-full.png</res_image>
+		<res_image>resources/Disposition/default/pizzeria-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
