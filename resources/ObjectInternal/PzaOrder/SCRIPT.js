@@ -1,5 +1,6 @@
-var PzaOrder = typeof PzaOrder !== "undefined" ? PzaOrder : (function(ui, $) {
+var PzaOrder = PzaOrder || (function(ui, $) {
 	if (!ui) return; // Do nothing on legacy UI
+
 	Simplicite.UI.hooks.PzaOrder = function(o, cbk) {
 		try {
 			o.locals.ui.form.onload = function(ctn, obj) {

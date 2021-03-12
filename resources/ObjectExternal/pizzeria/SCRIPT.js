@@ -1,4 +1,4 @@
-var pizzeria = typeof pizzeria !== 'undefined' ? pizzeria : (function($) {
+var pizzeria = pizzeria || (function($) {
 	var app, piz;
 
 	/**

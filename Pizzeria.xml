@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Pizzeria</mdl_name>
-		<mdl_version>4.0</mdl_version>
+		<mdl_version>5</mdl_version>
 		<mdl_prefix>pza</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
@@ -147,6 +147,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<viw_scope/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 		<viw_theme_id.thm_name>pizzeria</viw_theme_id.thm_name>
+		<viw_lang/>
 	</data>
 	<data>
 		<viw_name>PzaHome</viw_name>
@@ -157,6 +158,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<viw_scope/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 		<viw_theme_id.thm_name>pizzeria</viw_theme_id.thm_name>
+		<viw_lang/>
 	</data>
 </object>
 <object>
@@ -193,11 +195,11 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_last_name/>
 		<usr_lang>ENU</usr_lang>
 		<usr_email/>
-		<usr_active>3</usr_active>
-		<usr_home_id.viw_name/>
 		<usr_work_num/>
 		<usr_home_num/>
 		<usr_cell_num/>
+		<usr_active>3</usr_active>
+		<usr_home_id.viw_name/>
 		<usr_address1/>
 		<usr_address2/>
 		<usr_zipcode/>
@@ -211,6 +213,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_logout>2018-06-27 23:20:18</usr_logout>
 		<usr_last_logon>2020-02-28 12:38:54</usr_last_logon>
 		<usr_dateformat/>
+		<usr_lang_pref>ENU</usr_lang_pref>
 		<usr_uuid>77165e1d-2db7-4b48-85d2-da70a9b8fdcb</usr_uuid>
 	</data>
 </object>
@@ -559,6 +562,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Address]]></fld_comment>
@@ -595,6 +599,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order comments]]></fld_comment>
@@ -631,6 +636,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Coordinates]]></fld_comment>
@@ -667,6 +673,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order date]]></fld_comment>
@@ -703,6 +710,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Ordering person's email address]]></fld_comment>
@@ -739,6 +747,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order name]]></fld_comment>
@@ -775,6 +784,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Ordering person's phone number]]></fld_comment>
@@ -811,6 +821,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering>FKPS</fld_rendering>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Order pizza]]></fld_comment>
@@ -847,6 +858,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Status]]></fld_comment>
@@ -883,6 +895,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza description]]></fld_comment>
@@ -919,6 +932,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza diameter]]></fld_comment>
@@ -955,6 +969,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza name]]></fld_comment>
@@ -991,6 +1006,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza picture]]></fld_comment>
@@ -1027,6 +1043,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering>USD</fld_rendering>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza price]]></fld_comment>
@@ -1063,6 +1080,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza type]]></fld_comment>
@@ -1082,7 +1100,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
-		<fld_tray>0</fld_tray>
+		<fld_tray/>
 		<fld_type>10</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
@@ -1099,6 +1117,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
 		<fld_rendering/>
+		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
 		<fld_comment><![CDATA[Pizza presentation video]]></fld_comment>
@@ -1302,6 +1321,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -1334,7 +1355,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
-		<obo_srh_predef>0</obo_srh_predef>
+		<obo_srh_predef/>
 		<obo_selrow>1</obo_selrow>
 		<obo_updall>0</obo_updall>
 		<obo_delall>1</obo_delall>
@@ -1367,6 +1388,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -1429,6 +1452,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obo_btn_merge>P</obo_btn_merge>
 		<obo_btn_save>1</obo_btn_save>
 		<obo_btn_saveclose>1</obo_btn_saveclose>
+		<obo_btn_savenew>1</obo_btn_savenew>
+		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>1</obo_btn_close>
 		<obo_tray>1</obo_tray>
 		<obo_dashboard>1</obo_dashboard>
@@ -2709,6 +2734,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>PzaOrder-T1</cax_crosstab_id.ctb_name>
@@ -2729,6 +2755,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<cax_unitscale/>
 		<cax_unitfunct/>
 		<cax_unitlabel/>
+		<cax_yaxis>L</cax_yaxis>
 	</data>
 </object>
 <object>
@@ -2737,6 +2764,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<ctg_crosstab_id.ctb_name>PzaOrder-T1</ctg_crosstab_id.ctb_name>
 		<ctg_group_id.grp_name>PZA_ADMIN</ctg_group_id.grp_name>
+		<ctg_edit/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
@@ -3696,6 +3724,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<tsl_id.shc_name>pizzeria</tsl_id.shc_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Pizzeria frontend</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3703,6 +3732,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<tsl_id.shc_name>pizzeria</tsl_id.shc_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Frontend pizzeria</tsl_value>
+		<tsl_tooltip/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>

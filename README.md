@@ -73,6 +73,33 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 
 **Note**: this module is implemented using the **Rhino** scripting language on server-side.
 
+`PzaOrderHistoric` business object definition
+---------------------------------------------
+
+Pizza **order** history business object, tracks changes on:
+
+- Date
+- Status
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `row_ref_id` link to **`PzaOrder`**                          | id                                       | yes*     |           |          | Record row ID                                                                    |
+| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | History record index                                                             |
+| `created_by_hist`                                            | char(100)                                | yes*     |           |          | Created by                                                                       |
+| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | Created date                                                                     |
+| `pzaOrdDate`                                                 | datetime                                 | yes*     |           |          | Order date                                                                       |
+| `pzaOrdStatus`                                               | enum(20) using `PZA_ORD_STATUS` list     | yes      | yes       |          | Status                                                                           |
+
+### Lists
+
+* `PZA_ORD_STATUS`
+    - `PND` Pending
+    - `VAL` Validated
+    - `DEL` Delivered
+    - `CNC` Cancelled
+
 `PzaOrder` business object definition
 -------------------------------------
 
@@ -80,8 +107,8 @@ Pizza **order** business object
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `pzaOrdDate`                                                 | datetime                                 | yes*     |           |          | Order date                                                                       |
 | `pzaOrdName`                                                 | char(100)                                | yes      | yes       | yes      | Order name                                                                       |
 | `pzaOrdPhone`                                                | phone(20)                                |          | yes       | yes      | Ordering person's phone number                                                   |
@@ -103,33 +130,6 @@ Pizza **order** business object
     - `DEL` Delivered
     - `CNC` Cancelled
 
-`PzaOrderHistoric` business object definition
----------------------------------------------
-
-Pizza **order** history business object, tracks changes on:
-
-- Date
-- Status
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `row_ref_id` link to **`PzaOrder`**                          | id                                       | yes*     |           |          | -                                                                                |
-| `row_idx`                                                    | int(11)                                  | yes*     | yes       |          | -                                                                                |
-| `created_by_hist`                                            | char(100)                                | yes*     |           |          | -                                                                                |
-| `created_dt_hist`                                            | datetime                                 | yes*     |           |          | -                                                                                |
-| `pzaOrdDate`                                                 | datetime                                 | yes*     |           |          | Order date                                                                       |
-| `pzaOrdStatus`                                               | enum(20) using `PZA_ORD_STATUS` list     | yes      | yes       |          | Status                                                                           |
-
-### Lists
-
-* `PZA_ORD_STATUS`
-    - `PND` Pending
-    - `VAL` Validated
-    - `DEL` Delivered
-    - `CNC` Cancelled
-
 `PzaPizza` business object definition
 -------------------------------------
 
@@ -137,8 +137,8 @@ Pizza **order** history business object, tracks changes on:
 
 ### Fields
 
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
-| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `pzaPizName`                                                 | regexp(100)                              | yes*     | yes       |          | Pizza name                                                                       |
 | `pzaPizPrice`                                                | float(10, 2)                             | yes      | yes       |          | Pizza price                                                                      |
 | `pzaPizType`                                                 | enum(10) using `APP_PIZ_TYPE` list       | yes      | yes       |          | Pizza type                                                                       |
