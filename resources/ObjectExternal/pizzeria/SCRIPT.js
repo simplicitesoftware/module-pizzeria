@@ -1,4 +1,4 @@
-var pizzeria = pizzeria || (function($) {
+var pizzeria = (function($) {
 	var app, piz;
 
 	/**
@@ -10,7 +10,7 @@ var pizzeria = pizzeria || (function($) {
 		console.log(params);
 		
 		app = app || (params.pub
-			? new Simplicite.Ajax(params.root, 'api', 'pizzeria', 'simplicite')
+			? new Simplicite.Ajax(params.root, 'api', 'pizzeria', 'simplicite') // External
 			: Simplicite.Application); // Internal
 
 		piz = app.getBusinessObject('PzaPizza');
