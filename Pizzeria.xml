@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-pizzeria.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-28 00:04:15</mdl_lastupd>
+		<mdl_type/>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-Pizzeria&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-Pizzeria)
 
 ### Introduction
@@ -112,7 +112,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<thm_color3>#D98039</thm_color3>
 		<thm_text3>#FFFFFF</thm_text3>
 		<thm_base>light</thm_base>
-		<thm_css_doc>files/Theme/pizzeria/pizzeria_gen.css</thm_css_doc>
 		<thm_addon>files/Theme/pizzeria/addon.less</thm_addon>
 		<thm_searchbox>#FFFFFF</thm_searchbox>
 		<thm_active/>
@@ -215,6 +214,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_last_logon>2020-02-28 12:38:54</usr_last_logon>
 		<usr_dateformat/>
 		<usr_lang_pref>ENU</usr_lang_pref>
+		<usr_mfa_method/>
+		<usr_mfa_settings/>
 		<usr_uuid>77165e1d-2db7-4b48-85d2-da70a9b8fdcb</usr_uuid>
 	</data>
 </object>
@@ -436,7 +437,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>APP_PIZ_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>THIN</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Thin]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -444,7 +444,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>APP_PIZ_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PAN</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>20</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Pan]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -452,7 +451,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>APP_PIZ_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>THIN</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>10</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Fine]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -460,7 +458,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>APP_PIZ_TYPE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PAN</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>20</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Pain]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -468,7 +465,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PND</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Pending]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -476,31 +472,27 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VAL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Validated]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>DEL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Delivered]]></lov_value>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>CNC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Cancelled]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>DEL</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Delivered]]></lov_value>
+		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>PND</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>1</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[En attente]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -508,25 +500,22 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>VAL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Validée]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>DEL</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
+		<lov_code_id.lov_code>CNC</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Livrée]]></lov_value>
+		<lov_value><![CDATA[Annulée]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>PZA_ORD_STATUS</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>CNC</lov_code_id.lov_code>
-		<lov_code_id.lov_order_by>4</lov_code_id.lov_order_by>
+		<lov_code_id.lov_code>DEL</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Annulée]]></lov_value>
+		<lov_value><![CDATA[Livrée]]></lov_value>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
@@ -1271,6 +1260,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<obo_name>PzaOrder</obo_name>
 		<obo_dbtable>pza_order</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id>scripts/ObjectInternal/PzaOrder.js</obo_script_id>
 		<obo_usets>1</obo_usets>
@@ -1337,6 +1327,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<obo_name>PzaOrderHistoric</obo_name>
 		<obo_dbtable>pza_order_hist</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -1406,6 +1397,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<data>
 		<obo_name>PzaPizza</obo_name>
 		<obo_dbtable>pza_pizza</obo_dbtable>
+		<obo_role>OBJ</obo_role>
 		<obo_class/>
 		<obo_script_id/>
 		<obo_usets>1</obo_usets>
@@ -2917,7 +2909,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>pza-order</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/pza-order.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2935,7 +2926,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>pza-pizza</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/pza-pizza.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2953,7 +2943,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>pza-pizzeria</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/pza-pizzeria.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2971,7 +2960,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>pizzeria-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/pizzeria-module.svg</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2989,7 +2977,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>pizzeria-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/pizzeria-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -3007,7 +2994,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/pizzeria/STYLES.less</res_file>
-		<res_file_compiled>resources/ObjectExternal/pizzeria/STYLES.min.css</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -3025,26 +3011,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/pizzeria/HTML.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>pizzeria</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>ICO</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>FAVICON</res_code>
-		<res_cached>0</res_cached>
-		<res_file/>
-		<res_file_compiled/>
-		<res_image>resources/ObjectExternal/pizzeria/FAVICON.png</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3061,7 +3028,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>BANNER</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/ObjectExternal/pizzeria/BANNER.jpg</res_image>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -3079,7 +3045,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/pizzeria/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/pizzeria/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -3097,7 +3062,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectInternal/PzaOrder/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectInternal/PzaOrder/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
