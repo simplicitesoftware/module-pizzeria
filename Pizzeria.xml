@@ -142,7 +142,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 	<div class="area" data-area="1:="></div>
 </div>]]></viw_ui>
 		<viw_order>500</viw_order>
-		<viw_icon/>
+		<viw_icon>pza-pizzeria</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
@@ -217,19 +217,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_mfa_method/>
 		<usr_mfa_settings/>
 		<usr_uuid>77165e1d-2db7-4b48-85d2-da70a9b8fdcb</usr_uuid>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>pizzeria</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -2734,6 +2721,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 	<data>
 		<cax_crosstab_id.ctb_name>PzaOrder-T1</cax_crosstab_id.ctb_name>
@@ -2755,6 +2743,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<cax_unitfunct/>
 		<cax_unitlabel/>
 		<cax_yaxis>L</cax_yaxis>
+		<cax_palette/>
 	</data>
 </object>
 <object>
