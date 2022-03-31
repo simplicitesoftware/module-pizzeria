@@ -1,8 +1,9 @@
 pizzeria.display = function(params) {
-	var g = this.getGrant();
-	var pub = this.isPublic();
+	this.setDecoration(false);
 
-	this.setDecoration(!pub);
+	var g = this.getGrant();
+
+	var pub = this.isPublic();
 	var render = this.getName() + ".render(" + params.toJSONObject().put("bannerURL", HTMLTool.getResourceImageURL(this, "BANNER")).put("pub", pub).toString() + ")";
 
 	var gmapJS = new GMapTool(g).getJSURL();

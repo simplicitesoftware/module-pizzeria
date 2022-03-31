@@ -1,14 +1,12 @@
-var PzaOrder = PzaOrder || (function(ui, $) {
-	if (!ui) return; // Do nothing on legacy UI
-
+const PzaOrder = (function() {
 	Simplicite.UI.hooks.PzaOrder = function(o, cbk) {
 		try {
 			o.locals.ui.form.onload = function(ctn, obj) {
 				function searchbox() {
-					var addr = ui.getUIField(ctn, obj, "pzaOrdAddress").ui.input[0];
-					var ac = new google.maps.places.Autocomplete(addr);
+					const addr = ui.getUIField(ctn, obj, "pzaOrdAddress").ui.input[0];
+					const ac = new google.maps.places.Autocomplete(addr);
 					ac.addListener("place_changed", function() {
-						var l = ac.getPlace().geometry.location;
+						const l = ac.getPlace().geometry.location;
 						ui.getUIField(ctn, obj, "pzaOrdCoordinates").ui.val(l.lat() + "," + l.lng());
 					});
 				}
@@ -28,4 +26,4 @@ var PzaOrder = PzaOrder || (function(ui, $) {
 			cbk && cbk();
 		}
 	};
-})(window.$ui, jQuery);
+})();
