@@ -1,4 +1,4 @@
-const PzaOrder = (function() {
+var PzaOrder = PzaOrder || (function() {
 	Simplicite.UI.hooks.PzaOrder = function(o, cbk) {
 		try {
 			o.locals.ui.form.onload = function(ctn, obj) {

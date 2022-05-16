@@ -1,4 +1,4 @@
-const pizzeria = (function($) {
+var pizzeria = pizzeria || (function($) {
 	let app, piz;
 
 	/**
