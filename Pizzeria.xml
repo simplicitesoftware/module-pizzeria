@@ -1236,7 +1236,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<obd_view_id.viw_name>PzaAdminHome</obd_view_id.viw_name>
 		<obd_nohome>0</obd_nohome>
 		<obd_icon>pza-pizzeria</obd_icon>
-		<obd_order>71600</obd_order>
+		<obd_order>71000</obd_order>
 		<obd_domain_id.obd_name/>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2803,7 +2803,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<map_domain_id.obd_name>PizzeriaDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>PzaPizza</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>71600</map_order>
+		<map_order>71010</map_order>
 		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
@@ -2811,7 +2811,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<map_domain_id.obd_name>PizzeriaDomain</map_domain_id.obd_name>
 		<map_object_id.obj_name>PzaOrder</map_object_id.obj_name>
 		<map_process_id.pcs_name/>
-		<map_order>71610</map_order>
+		<map_order>71020</map_order>
 		<map_ext>0</map_ext>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
