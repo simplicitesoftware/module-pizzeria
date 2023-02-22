@@ -1,6 +1,10 @@
-PzaOrder.preValidate = function() {
+PzaOrder.postValidate = function() {
 	var f = this.getField("pzaOrdPhone");
-	f.setValue(new PhoneNumTool("us").getNationalNumber(f.getValue()));
+	if (!f.isEmpty()) try {
+		f.setValue(new PhoneNumTool("us").getNationalNumber(f.getValue()));
+	} catch(e) {
+		return Message.formatSimpleError(e.message);
+	}
 };
 
 PzaOrder.preCreate = function() {

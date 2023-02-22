@@ -118,6 +118,8 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<thm_active/>
 		<thm_font/>
 		<thm_iconset/>
+		<thm_code_editor_theme/>
+		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
 		<thm_menu_dom_c>#d98039</thm_menu_dom_c>
 		<thm_menu_dom_t>#FFFFFF</thm_menu_dom_t>
 		<thm_menu_dact_c>#c8722e</thm_menu_dact_c>
@@ -130,7 +132,7 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<thm_menu_sta_t>#FFFFFF</thm_menu_sta_t>
 		<thm_compact>0</thm_compact>
 		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
-		<thm_const/>
+		<thm_const>files/Theme/pizzeria/const.less</thm_const>
 	</data>
 </object>
 <object>
@@ -218,20 +220,6 @@ sonar-scanner -Dsonar.exclusions="**.min.js,**.min.css,ObjectExternal/pizzeria-r
 		<usr_mfa_method/>
 		<usr_mfa_settings><![CDATA[{}]]></usr_mfa_settings>
 		<usr_uuid>77165e1d-2db7-4b48-85d2-da70a9b8fdcb</usr_uuid>
-	</data>
-</object>
-<object>
-	<name>UserSysParam</name>
-	<action>upsert</action>
-	<data>
-		<usp_user_id.usr_login>pizzeria</usp_user_id.usr_login>
-		<usp_param_id.sys_code>FORCE_CHANGE_PASSWORD</usp_param_id.sys_code>
-		<usp_value><![CDATA[yes]]></usp_value>
-		<usp_param_id.sys_type>PRV</usp_param_id.sys_type>
-		<usp_param_id.sys_value><![CDATA[empty]]></usp_param_id.sys_value>
-		<usp_param_id.sys_value2/>
-		<usp_param_id.sys_desc><![CDATA[Force password change (set at user level)]]></usp_param_id.sys_desc>
-		<row_module_id.mdl_name>Pizzeria</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
