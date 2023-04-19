@@ -338,7 +338,7 @@ paths:
       - PzaOrderHistoric
   /rest/PzaOrderHistoric/{row_id}:
     post:
-      summary: Create a new PzaOrderHistoricbusiness object record
+      summary: Create a new PzaOrderHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -482,7 +482,7 @@ paths:
       tags:
       - PzaOrderHistoric
     put:
-      summary: Update a PzaOrderHistoricbusiness object record
+      summary: Update a PzaOrderHistoric business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -753,7 +753,7 @@ paths:
       - PzaOrder
   /rest/PzaOrder/{row_id}:
     post:
-      summary: Create a new PzaOrderbusiness object record
+      summary: Create a new PzaOrder business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -897,7 +897,7 @@ paths:
       tags:
       - PzaOrder
     put:
-      summary: Update a PzaOrderbusiness object record
+      summary: Update a PzaOrder business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -948,7 +948,7 @@ paths:
       - PzaOrder
   /rest/PzaPizza/{row_id}:
     post:
-      summary: Create a new PzaPizzabusiness object record
+      summary: Create a new PzaPizza business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1092,7 +1092,7 @@ paths:
       tags:
       - PzaPizza
     put:
-      summary: Update a PzaPizzabusiness object record
+      summary: Update a PzaPizza business object record
       security:
       - bearerAuth: []
       requestBody:
